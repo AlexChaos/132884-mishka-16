@@ -35,6 +35,115 @@
       <h1 class="form__main-title">Вязание на заказ</h1>
     </section>
 
+    <form class="order-form" action="https://echo.htmlacademy.ru">
+      <div class="order-form__wrapper">
+        <p class="order-form__description">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+        <section class="order-form__item">
+          <h2 class="visually-hidden">Тип заказа</h2>
+          <div class="order-form__item-name order-form__item-name--type">
+            <span class="order-form__item-decorate">Тип</span>
+          </div>
+          <div class="order-form__element-type">
+            <input class="visually-hidden" type="radio" name="type" id="type-home" value="Home accessories" checked="">
+            <label class="order-form__accessory-label" for="type-home">Аксессуар для интерьера</label>
+            <input class="visually-hidden" type="radio" name="type" id="type-toy" value="Toys">
+            <label class="order-form__toy-label" for="type-toy">Детская игрушка</label>
+          </div>
+        </section>
+      </div>
+
+      <section class="order-form__options order-form__options--color">
+        <div class="order-form__item-wrapper">
+          <h2 class="visually-hidden">Цвет заказа</h2>
+          <div class="order-form__item-name order-form__item-name--color">
+            <span class="order-form__item-decorate">Цвет</span>
+          </div>
+          <div class="order-form__item-color-wraper">
+            <input class="visually-hidden" type="checkbox" name="white" id="white" checked="">
+            <label for="white">Белый</label>
+            <input class="visually-hidden" type="checkbox" name="grey" id="grey" checked="">
+            <label for="grey">Серый</label>
+            <input class="visually-hidden" type="checkbox" name="tiffany" id="tiffany">
+            <label for="tiffany">«Тиффани»</label>
+            <input class="visually-hidden" type="checkbox" name="black" id="black">
+            <label for="black">Черный</label>
+            <input class="visually-hidden" type="checkbox" name="pink" id="pink">
+            <label for="pink">Розовый</label>
+            <input class="visually-hidden" type="checkbox" name="orange" id="orange">
+            <label for="orange">Оранжевый</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-form__options order-form__options--full-name">
+        <div class="order-form__options-wrapper">
+          <h2 class="visually-hidden">Фамилия Имя Отчество покупателя</h2>
+          <div class="order-form__item-name order-form__item-name--full-name">
+            <span class="order-form__item-decorate">Фио</span>
+          </div>
+          <div class="order-form__full-name-wrapper">
+            <div class="order-form__full-name-option-wrapper">
+              <label for="name">Имя:</label>
+              <input type="text" id="name" name="name" placeholder="Введите ваше имя*" required="">
+            </div>
+            <div class="order-form__full-name-option-wrapper">
+              <label for="surname">Фамилия:</label>
+              <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required="">
+            </div>
+            <div class="order-form__full-name-option-wrapper">
+              <label for="fathers-name">Отчество:</label>
+              <input type="text" name="fathers-name" id="fathers-name" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-form__bond">
+        <div class="order-form__phone-wrapper">
+          <h2 class="visually-hidden">Контакты для связи с покупателем</h2>
+          <div class="order-form__item-name order-form__item-name--phone-num">
+            <span class="order-form__item-decorate">Тел</span>
+          </div>
+          <div class="order-form__options order-form__options--phone-num">
+            <div class="order-form__option-wrapper">
+              <label class="order-form__phone" for="phone-number"></label>
+              <input type="tel" id="phone-number" name="phone-number" placeholder="+7 XXX XX XX*" required="">
+            </div>
+          </div>
+
+          <div class="order-form__mail-wrapper">
+            <div class="order-form__item-name order-form__item-name--mail">
+              <span class="order-form__item-decorate">E-mail</span>
+            </div>
+            <div class="order-form__options order-form__options--mail">
+              <div class="order-form__option-wrapper">
+                <label class="order-form__mail" for="mail"></label>
+                <input type="email" id="mail" name="mail" placeholder="Ваш e-mail*" required="">
+              </div>
+            </div>
+          </div>
+
+          <div class="order-form__text-info">
+            <div class="order-form__text-info-wrapper">
+              <div class="order-form__item-name order-form__item-name--more-info">
+                <span class="order-form__item-decorate">Доп</span>
+              </div>
+              <div class="order-form__options order-form__options--more-info">
+                <label class="order-form__more-info" for="more-info"></label>
+                <textarea id="more-info" name="more-info" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
+            </div>
+            <div class="order-form__send">
+              <p class="order-form__required-text">*Поля обязательны для заполнения</p>
+              <button class="order-form__send-btn button" type="submit">Отправить заказ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
+
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <section class="page-footer__social social">
