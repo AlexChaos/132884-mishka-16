@@ -6,7 +6,179 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item-link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item-link" href="search.html">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item-link" href="cart.html">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <main class="page-main">
+      <h1 class="visually-hidden">Магазин игрушек ручной работы для дома</h1>
+      <section class="description">
+        <h2 class="description__title">Милые штуки ручной работы для дома</h2>
+        <ul class="description__type-list">
+          <li class="description__type  description__type--interior">
+            <a href="#">
+              <span>Предметы интерьера</span>
+            </a>
+          </li>
+          <li class="description__type  description__type--toys">
+            <a href="#">
+              <span>Детские игрушки</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="product-best">
+        <div class="product-best__wrapper">
+          <h2 class="product-best__title">Вязаные корзинки</h2>
+          <span class="product-best__product-week">ТОВАР НЕДЕЛИ</span>
+          <p class="product-best__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
+          <table class="product-best__specifications">
+            <tbody>
+              <tr class="product-best__feature">
+                <td class="product-best__options">Цвет:</td>
+                <td class="product-best__value">«Тиффани»/серый</td>
+              </tr>
+              <tr class="product-best__feature">
+                <td class="product-best__options">Диаметр:</td>
+                <td class="product-best__value">25 см</td>
+              </tr>
+              <tr class="product-best__feature">
+                <td class="product-best__options">Высота:</td>
+                <td class="product-best__value">15 см</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="product-best__photo">
+            <img class="product-best__image" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
+          </div>
+          <span class="product-best__price">Цена: 990 руб.</span>
+          <button class="product-best__order-button button" type="button">Заказать</button>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__wrapper">
+          <h2 class="about__title">Коротко о нас:</h2>
+          <ul class="about__list">
+            <li class="about__item about__item--ecology">Экологически чистые материалы</li>
+            <li class="about__item about__item--scandinavian">Скандинавский стиль по российской цене</li>
+            <li class="about__item about__item--likes">Увеличивает лайкина фотографиях</li>
+            <li class="about__item about__item--handmade">Связано вручную с любовью и умилением</li>
+            <li class="about__item about__item--domestic">Поддержка отечественного производителя</li>
+            <li class="about__item about__item--pack">Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+          <blockquote class="reviews__item">
+            <p class="reviews__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+          </blockquote>
+          <div class="reviews__author-name-wrapper">
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <span class="reviews__insta-author">@misssssiskras</span>
+          </div>
+          <div class="reviews__toggles navigation-toggles">
+            <button class="navigation-toggles navigation-toggles--prew" type="button" aria-label="Назад">Назад</button>
+            <button class="navigation-toggles navigation-toggles--next" type="button" aria-label="Вперед">Вперед</button>
+          </div>
+          <button class="reviews__write-btn button" type="button">Написать</button>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__e-mail">
+            <span class="contacts__item  contacts__item--name">e-mail:</span>
+            <p class="contacts__item  contacts__item--value">
+              <a class="contacts__e-mail-link" href="#">
+                <span class="contacts__item--underline">info@mimimishkashop.ru</span>
+              </a>
+            </p>
+          </div>
+          <div class="contacts__address">
+            <span class="contacts__item  contacts__item--name">адрес:</span>
+            <p class="contacts__item  contacts__item--value">
+              г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101
+            </p>
+          </div>
+        </div>
+        <div class="contacts__map">
+            <img class="contacts__map-image" src="http://placehold.it/322x457" width="322" height="457" alt="Карта">
+        </div>
+        <div class="contacts__map-btn-wrapper">
+          <button class="contacts__map-btn button" type="button">Напишите нам</button>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <section class="page-footer__social social">
+            <h2 class="visually-hidden">Контакты в социальных сетях</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="https://www.instagram.com/htmlacademy/">Мы в инстаграм</a>
+              </li>
+              <li class="social__item">
+                <a href="https://ru-ru.facebook.com/htmlacademy/">Мы в Фейсбук</a>
+              </li>
+              <li class="social__item">
+                <a href="https://twitter.com/htmlacademy_ru">Мы в Твиттер</a>
+              </li>
+            </ul>
+          </section>
+          <section class="page-footer__copyright copyright">
+            <h2 class="visually-hidden">Авторские права</h2>
+            <b class="copyright__text">Разработано:</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML Academy</a>
+          </section>
+        </div>
+      </footer>
+
+      <section class="modal modal-basket">
+        <div class="modal__wrapper">
+          <div class="modal__header">
+            <h2 class="modal__title">Добавить в корзину</h2>
+          </div>
+          <span class="modal__text">Выберите размер:</span>
+          <p class="modal__size">
+            <button class="modal__size-element modal__size-element--active" type="button">S</button>
+            <button class="modal__size-element" type="button">M</button>
+            <button class="modal__size-element" type="button">L</button>
+          </p>
+          <div class="modal__basket-btn-wrapper">
+            <button class="modal__basket-btn button" type="submit">Добавить</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
   </body>
 </html>
