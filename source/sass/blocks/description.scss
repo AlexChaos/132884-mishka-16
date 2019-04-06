@@ -1,0 +1,26 @@
+/*coment*/
+.description__title {
+  color: $color-description-title;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.description__type-list {
+  width: 320px;
+  background-color: $color-description-type-interior;
+  list-style: none;
+}
+
+.description__type span {
+  color: $color-description-type-text;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.description__type--interior,
+.description__type--toys {
+  background-color: $color-description-type-interior;
+  cursor: pointer;
+}

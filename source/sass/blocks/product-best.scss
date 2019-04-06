@@ -1,0 +1,36 @@
+/*coment*/
+.product-best__title {
+  color: $color-product-best-title;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.product-best__product-week {
+  color: $color-product-best-week;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product-best__description {
+  color: $color-product-best-text;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.product-best__specifications {
+  color: $color-product-best-text;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.product-best__price {
+  color: $color-product-best-price;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}

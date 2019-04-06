@@ -1,0 +1,25 @@
+/*coment*/
+.contacts__title {
+  color: $color-contacts-title;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.contacts__e-mail {
+  color: $color-contacts-mail;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contacts__address {
+  color: $color-contacts-mail;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contacts__item-underline {
+  color: $color-contacts-mail;
+}
