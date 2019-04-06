@@ -1,1 +1,13 @@
- 
+/*coment*/
+.button {
+  width: 259px;
+  height: 52px;
+  border: 2px solid $color-button-border;
+  background-color: $color-button-background;
+  color: $color-button-text;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

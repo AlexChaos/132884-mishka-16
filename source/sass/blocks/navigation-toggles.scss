@@ -1,1 +1,10 @@
- 
+/*coment*/
+.navigation-toggles {
+  width: 260px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid $color-navigation-toggles-border;
+  background-color: $color-navigation-toggles-background;
+  cursor: pointer;
+}
