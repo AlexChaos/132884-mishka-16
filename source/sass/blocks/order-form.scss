@@ -1,1 +1,130 @@
 /*coment*/
+.order-form__description {
+  color: $color-form-description;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.order-form__item-decorate {
+  color: $color-form-item-decorate;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.order-form__accessory-label {
+  color: $color-form-accessory-label;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.order-form__toy-label {
+  color: $color-form-toy-label;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.order-form__element-type {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 33px;
+  padding-bottom: 19px;
+}
+
+.order-form__element-type label {
+  position: relative;
+  padding-left: 62px;
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+
+.order-form__full-name-option-wrapper {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 23px;
+}
+
+.order-form__item-name {
+  padding-bottom: 27px;
+}
+
+.order-form__option-wrapper {
+  position: relative;
+  padding-bottom: 34px;
+}
+
+.order-form__full-name-option-wrapper label,
+.order-form__item-color-wraper label {
+  color: $color-form-item-color-label;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  padding-bottom: 23px;
+}
+
+.order-form__item-color-wraper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 34px;
+}
+
+.order-form__item-color-wraper label {
+  position: relative;
+  padding-left: 62px;
+  padding-bottom: 43px;
+}
+
+.order-form__element-type label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $color-form-element-type-label;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.order-form__element-type input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 12px;
+  width: 16px;
+  height: 17px;
+  background: $color-form-element-type-input;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.order-form__item-color-wraper label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $color-form-item-color-label;
+  cursor: pointer;
+}
+
+.order-form__item-color-wraper input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 9px;
+  width: 22px;
+  height: 17px;
+  background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+  background-size: 22px 17px;
+  cursor: pointer;
+}
