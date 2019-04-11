@@ -1,4 +1,24 @@
 /*coment*/
+.description {
+  @include outline-block;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 489px;
+  background-color: $color-body-background-description;
+  background-image: url("/img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 373px;
+  background-position: 50% 0;
+}
+
+.description__type {
+  @include outline-block;
+  min-height: 103px;
+}
+
 .description__title {
   color: $color-description-title;
   font-size: 27px;
@@ -7,7 +27,7 @@
 }
 
 .description__type-list {
-  width: 320px;
+  @include list-reset;
   background-color: $color-description-type-interior;
   list-style: none;
 }
@@ -23,4 +43,37 @@
 .description__type--toys {
   background-color: $color-description-type-interior;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .description {
+    width: 668px;
+    min-height: 660px;
+    margin: 0 auto;
+    background-image: url("/img/hero-tablet@1x.jpg");
+    background-size: auto 744px;
+    background-position: center;
+    margin-bottom: 65px;
+  }
+
+  .description__type-list {
+    display: flex;
+  }
+
+  .description__type {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+    @include outline-block;
+    width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+  }
+
+  .description__type {
+    width: 1050px;
+  }
 }

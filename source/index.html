@@ -10,9 +10,11 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav">
-          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-          <button class="main-nav__toggle main-nav__toggle--closed" type="button">Открыть меню</button>
+        <nav class="main-nav main-nav__wrapper">
+          <div class="main-nav__logo-wrapper">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+            <button class="main-nav__toggle main-nav__toggle--closed" type="button">Открыть меню</button>
+          </div>
           <ul class="main-nav__list main-nav__list--main">
             <li class="main-nav__list-item main-nav__list-item-main">
               <a class="main-nav__list-link" href="catalog.html">Каталог товаров</a>
@@ -23,7 +25,7 @@
           </ul>
           <ul class="main-nav__list main-nav__list--user">
             <li class="main-nav__list-item main-nav__list-item-search">
-              <a class="main-nav__list-link" href="search.html">Поиск по сайту</a>
+              <a class="main-nav__list-link main-nav__list-link--hidden" href="search.html">Поиск по сайту</a>
             </li>
             <li class="main-nav__list-item main-nav__list-item--cart">
               <a class="main-nav__list-link" href="cart.html">Корзина: пока пуста</a>
@@ -33,7 +35,7 @@
             <li class="main-nav__list-item main-nav__list-item--new">
               <a class="main-nav__list-link" href="#">Новые поступления</a>
             </li>
-            <li class="main-nav__list-item">
+            <li class="main-nav__list-item main-nav__list-item--sale">
               <a class="main-nav__list-link" href="#">Распродажа</a>
             </li>
           </ul>
@@ -62,32 +64,36 @@
 
       <section class="product-best">
         <div class="product-best__wrapper">
-          <h2 class="product-best__title">Вязаные корзинки</h2>
-          <span class="product-best__product-week">ТОВАР НЕДЕЛИ</span>
-          <p class="product-best__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="product-best__specifications">
-            <tbody>
-              <tr class="product-best__feature">
-                <td class="product-best__options">Цвет:</td>
-                <td class="product-best__value">«Тиффани»/серый</td>
-              </tr>
-              <tr class="product-best__feature">
-                <td class="product-best__options">Диаметр:</td>
-                <td class="product-best__value">25 см</td>
-              </tr>
-              <tr class="product-best__feature">
-                <td class="product-best__options">Высота:</td>
-                <td class="product-best__value">15 см</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="product-best__photo">
-            <img class="product-best__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+          <div class="product-best__header">
+            <h2 class="product-best__title">Вязаные корзинки</h2>
+            <span class="product-best__product-week">ТОВАР НЕДЕЛИ</span>
           </div>
-          <span class="product-best__price">Цена: 990 руб.</span>
-          <button class="product-best__order-button button" type="button">Заказать</button>
+          <div class="product-best__elements-wrapper">
+            <p class="product-best__description">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+            <table class="product-best__specifications">
+              <tbody>
+                <tr class="product-best__feature">
+                  <td class="product-best__options">Цвет:</td>
+                  <td class="product-best__value">«Тиффани»/серый</td>
+                </tr>
+                <tr class="product-best__feature">
+                  <td class="product-best__options">Диаметр:</td>
+                  <td class="product-best__value">25 см</td>
+                </tr>
+                <tr class="product-best__feature">
+                  <td class="product-best__options">Высота:</td>
+                  <td class="product-best__value">15 см</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="product-best__photo">
+              <img class="product-best__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+            </div>
+            <span class="product-best__price">Цена: 990 руб.</span>
+            <button class="product-best__order-button button" type="button">Заказать</button>
+          </div>
         </div>
       </section>
 
@@ -97,7 +103,7 @@
           <ul class="about__list">
             <li class="about__item about__item--ecology">Экологически чистые материалы</li>
             <li class="about__item about__item--scandinavian">Скандинавский стиль по российской цене</li>
-            <li class="about__item about__item--likes">Увеличивает лайкина фотографиях</li>
+            <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
             <li class="about__item about__item--handmade">Связано вручную с любовью и умилением</li>
             <li class="about__item about__item--domestic">Поддержка отечественного производителя</li>
             <li class="about__item about__item--pack">Поставляется в подарочной упаковке</li>
@@ -110,7 +116,7 @@
           <h2 class="reviews__title">Отзывы</h2>
           <blockquote class="reviews__item">
             <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br> и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
           </blockquote>
           <div class="reviews__author-name-wrapper">
@@ -127,32 +133,40 @@
 
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__e-mail">
-            <span class="contacts__item  contacts__item--name">e-mail:</span>
-            <p class="contacts__item  contacts__item--value">
-              <a class="contacts__e-mail-link" href="#">
-                <span class="contacts__item-underline">info@mimimishkashop.ru</span>
-              </a>
-            </p>
+          <div class="contacts__address-container">
+            <h2 class="contacts__title">Контакты</h2>
+            <div class="contacts__main-info">
+              <div class="contacts__e-mail">
+                <span class="contacts__item  contacts__item--name">e-mail:</span>
+                <p class="contacts__item  contacts__item--value">
+                  <a class="contacts__e-mail-link" href="#">
+                    <span class="contacts__item-underline">info@mimimishkashop.ru</span>
+                  </a>
+                </p>
+              </div>
+              <div class="contacts__address">
+                <span class="contacts__item  contacts__item--name">адрес:</span>
+                <p class="contacts__item  contacts__item--value">
+                  г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="contacts__address">
-            <span class="contacts__item  contacts__item--name">адрес:</span>
-            <p class="contacts__item  contacts__item--value">
-              г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101
-            </p>
-          </div>
-        </div>
-        <div class="contacts__map">
+          <div class="contacts__map">
             <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта">
-        </div>
-        <div class="contacts__map-btn-wrapper">
-          <button class="contacts__map-btn button" type="button">Напишите нам</button>
+          </div>
+          <div class="contacts__map-btn-wrapper">
+            <button class="contacts__map-btn button" type="button">Напишите нам</button>
+          </div>
         </div>
       </section>
 
       <footer class="page-footer">
         <div class="page-footer__wrapper">
+          <section class="page-footer__logo">
+            <h2 class="visually-hidden">Логотип Мишка</h2>
+            <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Логотип Мишка">
+          </section>
           <section class="page-footer__social social">
             <h2 class="visually-hidden">Контакты в социальных сетях</h2>
             <ul class="social__list">

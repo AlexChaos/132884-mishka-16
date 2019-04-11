@@ -1,1 +1,32 @@
 /*coment*/
+.page-footer__wrapper {
+  @include outline-block;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    background-color: $color-footer-background;
+  }
+
+  .page-footer__wrapper {
+    @include outline-block;
+    min-height: 160px;
+    width: 1050px;
+    margin: 0 auto;
+  }
+}

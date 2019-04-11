@@ -25,7 +25,7 @@
           </ul>
           <ul class="main-nav__list main-nav__list--user">
             <li class="main-nav__list-item main-nav__list-item-search">
-              <a class="main-nav__list-link" href="search.html">Поиск по сайту</a>
+              <a class="main-nav__list-link main-nav__list-link--hidden" href="search.html">Поиск по сайту</a>
             </li>
             <li class="main-nav__list-item main-nav__list-item--cart">
               <a class="main-nav__list-link" href="cart.html">Корзина: пока пуста</a>
@@ -35,7 +35,7 @@
             <li class="main-nav__list-item main-nav__list-item--new">
               <a class="main-nav__list-link" href="#">Новые поступления</a>
             </li>
-            <li class="main-nav__list-item">
+            <li class="main-nav__list-item main-nav__list-item--sale">
               <a class="main-nav__list-link" href="#">Распродажа</a>
             </li>
           </ul>
@@ -159,6 +159,10 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <section class="page-footer__logo">
+          <h2 class="visually-hidden">Логотип Мишка</h2>
+          <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Логотип Мишка">
+        </section>
         <section class="page-footer__social social">
           <h2 class="visually-hidden">Контакты в социальных сетях</h2>
           <ul class="social__list">
@@ -180,5 +184,6 @@
         </section>
       </div>
     </footer>
+
   </body>
 </html>

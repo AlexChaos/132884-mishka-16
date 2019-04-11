@@ -1,4 +1,12 @@
 /*coment*/
+.about__wrapper {
+  @include outline-block;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .about__title {
   color: $color-about-title;
   font-size: 25px;
@@ -7,9 +15,100 @@
 }
 
 .about__list {
-  list-style: none;
+  @include list-reset;
   color: $color-about-list-text;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .about__wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .about__title {
+    @include margin-padding-reset;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    padding-left: 2px;
+    padding-top: 85px;
+    padding-bottom: 36px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about__item--ecology {
+    width: 205px;
+    padding-right: 129px;
+    order: 0;
+  }
+
+  .about__item--scandinavian {
+    width: 235px;
+    order: 3;
+    padding-right: 99px;
+  }
+
+  .about__item--likes {
+    width: 212px;
+    padding-right: 99px;
+    order: 5;
+  }
+
+  .about__item--handmade {
+    width: 248px;
+    order: 2;
+  }
+
+  .about__item--domestic {
+    width: 295px;
+    order: 4;
+  }
+
+  .about__item--pack {
+    width: 233px;
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    margin-bottom: 30px;
+  }
+
+  .about__wrapper {
+    @include outline-block;
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .about__title {
+    padding-bottom: 49px;
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 57px;
+  }
+
+  .about__title,
+  .about__list {
+    padding-left: 170px;
+  }
+
+  .about__item {
+    padding-top: 53px;
+    padding-bottom: 57px;
+    margin-left: 5px;
+    margin-right: 12px;
+  }
 }
