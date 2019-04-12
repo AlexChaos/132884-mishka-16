@@ -1,9 +1,15 @@
 /*coment*/
 .order-form__description {
+  @include margin-padding-reset;
   color: $color-form-description;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
+  padding-bottom: 25px;
+}
+
+.order-form__bond {
+  margin-bottom: 50px;
 }
 
 .order-form__item-decorate {
@@ -32,7 +38,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 33px;
+  padding-top: 30px;
   padding-bottom: 19px;
 }
 
@@ -43,20 +49,82 @@
   cursor: pointer;
 }
 
-.order-form__full-name-option-wrapper {
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 23px;
+.order-form__full-name-wrapper {
+  padding-bottom: 15px;
 }
 
-.order-form__item-name {
+.order-form__full-name-option-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 35px;
+}
+
+.order-form__item-name--phone-num {
+  padding-bottom: 15px;
+}
+
+.order-form__item-name--full-name {
   padding-bottom: 27px;
+}
+
+.order-form__item-name--mail {
+  padding-bottom: 15px;
+}
+
+.order-form__item-name--more-info {
+  padding-bottom: 25px;
+}
+
+.order-form__wrapper {
+  @include outline-block;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.order-form__text-info-wrapper {
+  @include outline-block;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.order-form__options {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.order-form__options textarea {
+  padding: 15px;
+  outline: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.order-form__required-text {
+  @include margin-padding-reset;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.order-form__more-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form__phone-wrapper {
+  @include outline-block;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .order-form__option-wrapper {
   position: relative;
-  padding-bottom: 34px;
+  padding-bottom: 50px;
 }
 
 .order-form__full-name-option-wrapper label,
@@ -65,7 +133,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
-  padding-bottom: 23px;
+  padding-bottom: 15px;
 }
 
 .order-form__item-color-wraper {
@@ -127,4 +195,330 @@
   background: url("../img/icon-tick.svg") no-repeat 50% 50%;
   background-size: 22px 17px;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    padding-bottom: 30px;
+  }
+
+  .order-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .order-form__options {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .order-form__description {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 22px;
+  }
+
+  .order-form__item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .order-form__item-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .order-form__item-name--type {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    padding-top: 48px;
+    padding-right: 133px;
+  }
+
+  .order-form__item-name--color {
+    display: flex;
+    width: 44px;
+    padding-top: 70px;
+  }
+
+  .order-form__element-type {
+    padding-top: 42px;
+    padding-bottom: 15px;
+  }
+
+  .order-form__element-type label::before {
+    width: 52px;
+    height: 52px;
+  }
+
+  .order-form__element-type input:checked + label::after {
+    top: 6px;
+    left: 14px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .order-form__options--color {
+    background-color: $color-options-background;
+    margin-bottom: 80px;
+  }
+
+  .order-form__options--color label {
+    width: 160px;
+    padding-top: 3px;
+    padding-bottom: 56px;
+    padding-left: 102px;
+  }
+
+  .order-form__element-type label {
+    padding-top: 2px;
+    padding-bottom: 56px;
+    padding-left: 82px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .order-form__item-color-wraper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top: 60px;
+  }
+
+  .order-form__item-color-wraper label {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  .order-form__item-color-wraper label::before {
+    top: -9px;
+    left: 22px;
+    width: 52px;
+    height: 48px;
+  }
+
+  .order-form__item-color-wraper input:checked + label::after {
+    top: 6px;
+    left: 35px;
+    width: 33px;
+    height: 22px;
+    background-size: 33px 22px;
+  }
+
+  .order-form__options-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .order-form__full-name-wrapper {
+    width: 400px;
+    flex-grow: 1;
+    flex-direction: column;
+    padding-left: 130px;
+  }
+
+  .order-form__full-name-option-wrapper {
+    flex-direction: row;
+  }
+
+  .order-form__full-name-option-wrapper label {
+    padding-top: 2px;
+    padding-right: 24px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .order-form__options input {
+    padding-bottom: 14px;
+    padding-left: 18px;
+    padding-right: 82px;
+    font-size: 19px;
+    line-height: 18px;
+    width: auto;
+    flex-grow: 1;
+    background-color: inherit;
+    border: none;
+  }
+
+  .order-form__bond {
+    background-color: $color-options-background;
+  }
+
+  .order-form__phone-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  .order-form__phone-num-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .order-form__mail-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .order-form__options--phone-num {
+    width: 100%;
+    padding-top: 55px;
+    padding-left: 122px;
+  }
+
+  .order-form__options--mail {
+    width: 100%;
+    padding-top: 35px;
+    padding-left: 107px;
+  }
+
+  .order-form__option-wrapper {
+    padding-bottom: 0;
+  }
+
+  .order-form__item-name--phone-num {
+    width: 60px;
+    padding-top: 65px;
+  }
+
+  .order-form__item-name--mail {
+    width: 80px;
+    padding-top: 40px;
+    padding-bottom: 18px;
+  }
+
+  .order-form__text-info-wrapper {
+    @include outline-block;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .order-form__more-info-wrapper {
+    display: flex;
+  }
+
+  .order-form__item-name--more-info {
+    padding-top: 18px;
+    width: 60px;
+  }
+
+  .order-form__options--more-info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 38px;
+    padding-left: 122px;
+    flex-grow: 1;
+  }
+
+  .order-form__send-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .order-form__required-text {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 25px;
+  }
+
+  .order-form__send-btn {
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .order-form__description {
+    width: 672px;
+    padding-left: 175px;
+  }
+
+  .order-form__item-name--type {
+    padding-left: 63px;
+    padding-right: 78px;
+  }
+
+  .order-form__options {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .order-form__options--color {
+    margin-bottom: 80px;
+  }
+
+  .order-form__item-name--color {
+    padding-left: 60px;
+  }
+
+  .order-form__item-color-wraper {
+    width: auto;
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
+
+  .order-form__item-name--full-name {
+    padding-left: 60px;
+  }
+
+  .order-form__full-name-wrapper {
+    padding-left: 78px;
+  }
+
+  .order-form__phone-wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .order-form__item-name--phone-num {
+    width: 60px;
+    padding-left: 62px;
+  }
+
+  .order-form__item-name--mail {
+    padding-left: 62px;
+  }
+
+  .order-form__options--mail {
+    padding-left: 45px;
+  }
+
+  .order-form__options--phone-num {
+    padding-left: 60px;
+  }
+
+  .order-form__text-info-wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .order-form__item-name--more-info {
+    padding-left: 62px;
+  }
+
+  .order-form__options--more-info {
+    padding-left: 75px;
+    padding-right: 175px;
+    padding-bottom: 33px;
+  }
+
+  .order-form__send-wrapper {
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-bottom: 10px;
+  }
 }
