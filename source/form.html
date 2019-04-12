@@ -2,32 +2,46 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Вязание на заказ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav">
-          <a class="main-nav__logo" href="index.html">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-          </a>
-          <button class="main-nav__toggle main-nav__toggle--closed" type="button">Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
+        <nav class="main-nav main-nav__wrapper">
+          <div class="main-nav__logo-wrapper">
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+            </a>
+            <button class="main-nav__toggle main-nav__toggle--closed" type="button">Открыть меню</button>
+          </div>
+          <ul class="main-nav__list main-nav__list--main">
+            <li class="main-nav__list-item main-nav__list-item-main">
+              <a class="main-nav__list-link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="search.html">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="cart.html">Корзина: пока пуста</a>
+            <li class="main-nav__list-item main-nav__list-item--order">
+              <a class="main-nav__list-link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
+          <ul class="main-nav__list main-nav__list--user">
+            <li class="main-nav__list-item main-nav__list-item-search">
+              <a class="main-nav__list-link main-nav__list-link--hidden" href="search.html">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__list-item main-nav__list-item--cart">
+              <a class="main-nav__list-link" href="cart.html">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list main-nav__list--sub">
+            <li class="main-nav__list-item main-nav__list-item--new">
+              <a class="main-nav__list-link" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__list-item main-nav__list-item--sale">
+              <a class="main-nav__list-link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <span class="main-nav__note">Бесплатная доставка по России</span>
         </nav>
       </div>
     </header>
@@ -147,6 +161,10 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <section class="page-footer__logo">
+          <h2 class="visually-hidden">Логотип Мишка</h2>
+          <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Логотип Мишка">
+        </section>
         <section class="page-footer__social social">
           <h2 class="visually-hidden">Контакты в социальных сетях</h2>
           <ul class="social__list">
@@ -168,5 +186,6 @@
         </section>
       </div>
     </footer>
+
   </body>
 </html>

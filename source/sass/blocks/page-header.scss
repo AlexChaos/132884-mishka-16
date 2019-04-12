@@ -1,1 +1,16 @@
 /*coment*/
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    @include outline-block;
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    @include outline-block;
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
