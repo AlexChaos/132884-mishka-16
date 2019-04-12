@@ -1,7 +1,36 @@
 /*coment*/
 .form-title__main-title {
+  @include margin-padding-reset;
   color: $color-form-title;
+  padding-top: 70px;
+  padding-bottom: 75px;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
+}
+
+.form-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+  background-color: $color-form-title-backgroundl;
+}
+
+@media (min-width: $tablet-width) {
+  .form-title {
+    margin-bottom: 80px;
+  }
+
+  .form-title__main-title {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 50px;
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-title {
+    margin-bottom: 155px;
+  }
 }
