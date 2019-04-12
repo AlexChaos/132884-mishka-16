@@ -11,8 +11,18 @@
   min-height: 79px;
 }
 
+/*.main-nav__logo {
+  background-color: $color-main-nav-background;
+  padding-top: 22px;
+}*/
+
 .main-nav__logo-wrapper {
-  min-height: 79px;
+  @include outline-block;
+  display: flex;
+  justify-content: center;
+  background-color: $color-main-nav-background;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .main-nav__toggle {
@@ -26,6 +36,9 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  padding-left: 76px;
+  padding-top: 28px;
+  padding-bottom: 27px;
 }
 
 .main-nav__list--sub,
@@ -39,7 +52,8 @@
 
 .main-nav__list-item {
   @include outline-block;
-  min-height: 79px;
+  display: flex;
+  /*min-height: 79px;*/
 }
 
 @media (min-width: $tablet-width) {
@@ -56,7 +70,8 @@
   .main-nav__logo-wrapper {
     @include outline-block;
     width: 320px;
-    min-height: 79px;
+    /*min-height: 79px;*/
+    padding-bottom: 30px;
     order: 0;
   }
 
@@ -64,6 +79,11 @@
     display: flex;
     justify-content: flex-start;
   }
+
+  /*.main-nav__list-link {
+    padding-top: 20px;
+    padding-left: 0;
+  }*/
 
   .main-nav__list--user {
     order: 1;
@@ -77,6 +97,7 @@
     display: flex;
     order: 3;
     margin-left: auto;
+    padding-top: 20px;
   }
 
   .main-nav__list-item-search {
@@ -91,8 +112,19 @@
     width: 264px;
   }
 
+  .main-nav__list-item--cart a {
+    padding-top: 32px;
+    padding-left: 85px;
+  }
+
   .main-nav__list-item-main {
     width: 167px;
+  }
+
+  .main-nav__list-item-main a,
+  .main-nav__list-item--order a {
+    padding-top: 18px;
+    padding-left: 0;
   }
 
   .main-nav__list-item--order {
@@ -109,6 +141,11 @@
     @include outline-block;
     width: 1050px;
     margin: 0 auto;
+  }
+
+  .main-nav__list-item-main a {
+    padding-top: 32px;
+    padding-bottom: 30px;
   }
 
   .main-nav__list--sub {
@@ -138,6 +175,12 @@
     width: 184px;
   }
 
+  .main-nav__list-item--order a {
+    padding-left: 35px;
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
   .main-nav__list-item--cart {
     width: 266px;
   }
@@ -146,7 +189,19 @@
     width: 184px;
   }
 
+  .main-nav__list-item--new a {
+    padding-left: 0;
+    padding-top: 17px;
+    padding-bottom: 30px;
+  }
+
   .main-nav__list-item--sale {
     width: 184px;
+  }
+
+  .main-nav__list-item--sale a {
+    padding-left: 35px;
+    padding-top: 17px;
+    padding-bottom: 30px;
   }
 }

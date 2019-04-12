@@ -1,7 +1,13 @@
 /*coment*/
+.page-footer {
+  min-height: 160px;
+  background-color: $color-footer-background;
+}
+
 .page-footer__wrapper {
   @include outline-block;
-  width: 320px;
+  width: 260px;
+  min-height: 160px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -15,6 +21,10 @@
     align-items: center;
     width: 668px;
     margin: 0 auto;
+  }
+
+  .page-footer__logo-img {
+    display: flex;
   }
 }
 

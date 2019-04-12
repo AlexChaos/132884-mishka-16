@@ -1,7 +1,48 @@
 /*coment*/
+.catalog-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+  background-color: $color-catalog-background-title;
+}
+
 .catalog-title__main-title {
+  @include margin-padding-reset;
   color: $color-catalog-title;
+  width: 235px;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
+  padding-top: 68px;
+  padding-bottom: 72px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-title__main-title {
+    width: 371px;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 50px;
+    padding-top: 95px;
+    padding-bottom: 80px;
+  }
+
+  .catalog-title {
+    margin-top: -70px;
+    margin-bottom: 70px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-title {
+    margin-bottom: 135px;
+  }
+
+  .catalog-title__main-title {
+    width: 455px;
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 57px;
+  }
 }
