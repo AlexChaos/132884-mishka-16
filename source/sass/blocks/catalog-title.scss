@@ -24,23 +24,30 @@
     font-size: 43px;
     line-height: 50px;
     padding-top: 95px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
   }
 
   .catalog-title {
-    margin-top: -70px;
-    margin-bottom: 70px;
+    margin-top: -67px;
+    margin-bottom: 77px;
     padding-bottom: 12px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-title {
-    margin-bottom: 135px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 30px;
+    margin-top: -70px;
+    margin-bottom: 130px;
   }
 
   .catalog-title__main-title {
-    width: 455px;
+    display: flex;
+    justify-content: center;
+    width: 470px;
+    padding-left: 2px;
     font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 53px;
     line-height: 57px;

@@ -4,7 +4,7 @@
   margin: 0 auto;
   margin-top: -18px;
   margin-bottom: 27px;
-  background-color: $color-body-background-description;
+  background-color: $color-description-background;
   background-image: url("/img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: auto 373px;
@@ -69,7 +69,7 @@
 
 @media (min-width: $tablet-width) {
   .description {
-    width: 668px;
+    width: auto;
     min-height: 660px;
     padding-left: 50px;
     padding-right: 50px;
@@ -107,16 +107,18 @@
   .description__type-list {
     display: flex;
     flex-direction: row;
+    width: 668px;
+    margin: 0 auto;
   }
 
   .description__type {
-    width: 334px;
+    width: 668px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .description {
-    width: 1050px;
+    width: auto;
     margin: 0 auto;
     margin-bottom: 35px;
     margin-top: -75px;
@@ -124,6 +126,11 @@
 
   .description__type {
     width: 1050px;
+  }
+
+  .description__type-list {
+    width: 1050px;
+    margin: 0 auto;
   }
 
   .description__title-wrapper {

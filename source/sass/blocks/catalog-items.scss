@@ -5,7 +5,16 @@
 }
 
 .catalog-items__item {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.catalog-items__link {
+  display: flex;
+  height: auto;
+}
+
+.catalog-items__basket {
+  font-size: 0;
 }
 
 .catalog-items__title a {
@@ -15,11 +24,18 @@
   line-height: 24px;
 }
 
+.catalog-items__wrapper-description {
+  border: 1px solid $color-catalog-wrapper-description;
+}
+
 .catalog-items__option {
+  display: flex;
+  padding-bottom: 20px;
   color: $color-catalog-items-option;
   font-size: 13px;
   font-weight: 400;
   line-height: 30px;
+  border-bottom: 1px solid $color-catalog-items-border;
 }
 
 .catalog-items__price {
@@ -31,7 +47,8 @@
 
 .catalog-items__title {
   margin: 0;
-  padding: 25px 0 4px;
+  padding-top: 22px;
+  padding-bottom: 4px;
 }
 
 .catalog-items__description {
@@ -57,9 +74,49 @@
   .catalog-items__item {
     display: flex;
     align-items: stretch;
-    padding-bottom: 53px;
+    padding-bottom: 54px;
     margin-bottom: 0;
     flex-direction: row;
+  }
+
+  .catalog-items__title {
+    padding-top: 24px;
+  }
+
+  .catalog-items__title a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .catalog-items__title--cart {
+    padding-bottom: 7px;
+  }
+
+  .catalog-items__title--big {
+    width: 220px;
+    padding-top: 22px;
+    padding-bottom: 3px;
+  }
+
+  .catalog-items__option {
+    font-size: 15px;
+    line-height: 30px;
+    border: 0;
+  }
+
+  .catalog-items__price {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .catalog-items__buy {
+    padding-top: 23px;
+    padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 32px;
+    margin-left: 32px;
+    border-top: 1px solid $color-catalog-items-buy;
   }
 
   .catalog-items__link img {
@@ -71,7 +128,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 5px;
+    /*margin-right: 5px;*/
+    width: 334px;
   }
 }
 
@@ -85,8 +143,16 @@
     flex-wrap: wrap;
   }
 
+  .catalog-items__description {
+    padding-left: 25px;
+  }
+
+  .catalog-items__wrapper-description {
+    width: auto;
+  }
+
   .catalog-items__item {
-    width: 316px;
+    width: 315px;
     flex-direction: column;
   }
 
@@ -97,10 +163,21 @@
 
   .catalog-items__option {
     display: flex;
-    padding-bottom: 35px;
+    padding-bottom: 38px;
   }
 
   .catalog-items__option--seze {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+  }
+
+  .catalog-items__title--cart {
+    padding-top: 23px;
+    padding-bottom: 5px;
+  }
+
+  .catalog-items__buy {
+    padding-top: 23px;
+    margin-right: 25px;
+    margin-left: 25px;
   }
 }
