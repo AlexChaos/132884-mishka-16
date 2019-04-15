@@ -4,7 +4,25 @@
   height: 52px;
   margin: 0;
   padding: 0;
-  border: 1px solid $color-navigation-toggles-border;
   background-color: $color-navigation-toggles-background;
-  cursor: pointer;
+}
+
+.navigation-toggles--prew {
+  border-left: 1px solid $color-navigation-toggles-border;
+  border-right: none;
+  border-top: 1px solid $color-navigation-toggles-border;
+  border-bottom: 1px solid $color-navigation-toggles-border;
+}
+
+.navigation-toggles--next {
+  border-left: 1px solid $color-navigation-toggles-border;
+  border-right: 1px solid $color-navigation-toggles-border;
+  border-top: 1px solid $color-navigation-toggles-border;
+  border-bottom: 1px solid $color-navigation-toggles-border;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation-toggles {
+    cursor: pointer;
+  }
 }

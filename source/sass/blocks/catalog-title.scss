@@ -9,9 +9,9 @@
 .catalog-title__main-title {
   @include margin-padding-reset;
   color: $color-catalog-title;
-  width: 235px;
+  width: 240px;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 27px;
-  font-weight: 700;
   line-height: 30px;
   padding-top: 68px;
   padding-bottom: 72px;
@@ -19,30 +19,37 @@
 
 @media (min-width: $tablet-width) {
   .catalog-title__main-title {
-    width: 371px;
+    width: 380px;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 43px;
-    font-weight: 700;
     line-height: 50px;
     padding-top: 95px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
   }
 
   .catalog-title {
-    margin-top: -70px;
-    margin-bottom: 70px;
+    margin-top: -67px;
+    margin-bottom: 77px;
     padding-bottom: 12px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-title {
-    margin-bottom: 135px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 30px;
+    margin-top: -70px;
+    margin-bottom: 130px;
   }
 
   .catalog-title__main-title {
-    width: 455px;
+    display: flex;
+    justify-content: center;
+    width: 470px;
+    padding-left: 2px;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 53px;
-    font-weight: 700;
     line-height: 57px;
   }
 }

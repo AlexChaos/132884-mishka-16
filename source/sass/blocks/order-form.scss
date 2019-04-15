@@ -14,23 +14,23 @@
 
 .order-form__item-decorate {
   color: $color-form-item-decorate;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
-  font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
 }
 
 .order-form__accessory-label {
   color: $color-form-accessory-label;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
-  font-weight: 700;
   line-height: 18px;
 }
 
 .order-form__toy-label {
   color: $color-form-toy-label;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
-  font-weight: 700;
   line-height: 18px;
 }
 
@@ -76,13 +76,11 @@
 }
 
 .order-form__wrapper {
-  @include outline-block;
   width: 260px;
   margin: 0 auto;
 }
 
 .order-form__text-info-wrapper {
-  @include outline-block;
   width: 260px;
   margin: 0 auto;
 }
@@ -117,7 +115,6 @@
 }
 
 .order-form__phone-wrapper {
-  @include outline-block;
   width: 260px;
   margin: 0 auto;
 }
@@ -130,8 +127,8 @@
 .order-form__full-name-option-wrapper label,
 .order-form__item-color-wraper label {
   color: $color-form-item-color-label;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
-  font-weight: 700;
   line-height: 18px;
   padding-bottom: 15px;
 }
@@ -290,8 +287,8 @@
   }
 
   .order-form__item-color-wraper label {
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 19px;
-    font-weight: 700;
     line-height: 18px;
   }
 
@@ -395,7 +392,6 @@
   }
 
   .order-form__text-info-wrapper {
-    @include outline-block;
     width: 668px;
     margin: 0 auto;
   }
