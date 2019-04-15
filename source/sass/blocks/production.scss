@@ -7,8 +7,8 @@
   @include margin-padding-reset;
   color: $color-catalog-production-title;
   width: 126px;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
-  font-weight: 700;
   line-height: 24px;
   padding-top: 24px;
   padding-left: 89px;
@@ -125,8 +125,8 @@
 
   .production__title {
     width: 148px;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 20px;
-    font-weight: 700;
     line-height: 24px;
     padding-left: 0;
     padding-top: 100px;

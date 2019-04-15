@@ -1,6 +1,5 @@
 /*coment*/
 .catalog-items__wrapper {
-  @include outline-block;
   width: 260px;
   margin: 0 auto;
 }
@@ -11,8 +10,8 @@
 
 .catalog-items__title a {
   color: $color-catalog-items-title;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
-  font-weight: 700;
   line-height: 24px;
 }
 
@@ -25,8 +24,8 @@
 
 .catalog-items__price {
   color: $color-catalog-items-price;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 15px;
-  font-weight: 700;
   line-height: 24px;
 }
 
@@ -53,9 +52,6 @@
   .catalog-items__wrapper {
     width: 668px;
     margin: 0 auto;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: space-between;*/
   }
 
   .catalog-items__item {

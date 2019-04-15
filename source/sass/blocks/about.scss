@@ -1,6 +1,9 @@
 /*coment*/
+.about {
+  margin-bottom: 25px;
+}
+
 .about__wrapper {
-  @include outline-block;
   width: 260px;
   margin: 0 auto;
   display: flex;
@@ -8,18 +11,56 @@
 }
 
 .about__title {
+  @include margin-padding-reset;
   color: $color-about-title;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 25px;
-  font-weight: 700;
   line-height: 30px;
+  padding-top: 28px;
+  padding-bottom: 32px;
 }
 
 .about__list {
   @include list-reset;
   color: $color-about-list-text;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
-  font-weight: 700;
   line-height: 20px;
+}
+
+.about__item {
+  padding-top: 55px;
+  padding-bottom: 28px;
+}
+
+.about__item--ecology {
+  position: relative;
+  width: 175px;
+}
+
+.about__item--scandinavian {
+  position: relative;
+  width: 200px;
+}
+
+.about__item--likes {
+  position: relative;
+  width: 181px;
+}
+
+.about__item--handmade {
+  position: relative;
+  width: 211px;
+}
+
+.about__item--domestic {
+  position: relative;
+  width: 251px;
+}
+
+.about__item--pack {
+  position: relative;
+  width: 198px;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,6 +73,7 @@
     @include margin-padding-reset;
     font-size: 43px;
     line-height: 50px;
+    padding-bottom: 50px;
   }
 
   .about__list {
@@ -42,27 +84,27 @@
 
   .about__item {
     padding-left: 2px;
-    padding-top: 85px;
-    padding-bottom: 36px;
+    padding-top: 55px;
+    padding-bottom: 56px;
     font-size: 20px;
     line-height: 22px;
   }
 
   .about__item--ecology {
     width: 205px;
-    padding-right: 129px;
+    padding-right: 125px;
     order: 0;
   }
 
   .about__item--scandinavian {
     width: 235px;
     order: 3;
-    padding-right: 99px;
+    padding-right: 95px;
   }
 
   .about__item--likes {
     width: 212px;
-    padding-right: 99px;
+    padding-right: 120px;
     order: 5;
   }
 
@@ -84,11 +126,10 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .about__wrapper {
-    @include outline-block;
     width: 1050px;
     margin: 0 auto;
   }
@@ -96,7 +137,7 @@
   .about__title {
     padding-bottom: 49px;
     font-size: 53px;
-    font-weight: 700;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
     line-height: 57px;
   }
 

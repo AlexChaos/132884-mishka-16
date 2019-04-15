@@ -1,16 +1,32 @@
 /*coment*/
+.product-best {
+  padding-bottom: 42px;
+}
+
 .product-best__wrapper {
-  @include outline-block;
   width: 260px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
+.product-best__header {
+  padding-bottom: 25px;
+}
+
+.product-best__title {
+  @include margin-padding-reset;
+  color: $color-description-title;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  padding-bottom: 3px;
+}
+
 .product-best__product-week {
   color: $color-product-best-week;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
-  font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
 }
@@ -21,44 +37,66 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  padding-bottom: 15px;
 }
 
 .product-best__specifications {
   color: $color-product-best-text;
+  width: 100%;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+.product-best__feature {
+  border-bottom: 1px solid $color-table-border-feature;
+}
+
+.product-best__options {
+  padding-right: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.product-best__photo {
+  margin-bottom: 23px;
 }
 
 .product-best__price {
   color: $color-product-best-price;
+  display: flex;
+  justify-content: center;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
-  font-weight: 700;
   line-height: 24px;
+  padding-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
+  .product-best {
+    padding-bottom: 65px;
+  }
+
   .product-best__wrapper {
     width: 668px;
     margin: 0 auto;
-    margin-bottom: 68px;
   }
 
   .product-best__elements-wrapper {
-    @include outline-block;
     min-width: 662px;
-    height: 483px;
+    height: 465px;
     display: flex;
     flex-flow: column wrap;
   }
 
   .product-best__header {
-    @include outline-block;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     order: 0;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
 
   .product-best__description {
@@ -83,8 +121,8 @@
     width: 287px;
     align-self: flex-start;
     align-items: center;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 20px;
-    font-weight: 700;
     line-height: 24px;
     padding-bottom: 34px;
     order: 4;
@@ -99,9 +137,21 @@
 
   .product-best__title {
     @include margin-padding-reset;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 43px;
-    font-weight: 700;
     line-height: 50px;
+  }
+
+  .product-best__options {
+    padding-right: 2px;
+  }
+
+  .product-best__product-week {
+    width: 70px;
+    padding-top: 10px;
+    padding-bottom: 24px;
+    padding-right: 30px;
+    text-align: center;
   }
 
   .product-best__photo {
@@ -121,11 +171,10 @@
 
 @media (min-width: $desktop-width) {
   .product-best {
-    padding-bottom: 65px;
+    padding-bottom: 40px;
   }
 
   .product-best__wrapper {
-    @include outline-block;
     width: 1050px;
     margin: 0 auto;
     padding-bottom: 90px;
@@ -134,47 +183,50 @@
   .product-best__elements-wrapper {
     position: relative;
     max-width: 1050px;
-    min-height: 680px;
+    min-height: 700px;
   }
 
   .product-best__header {
+    width: 652px;
     position: absolute;
     z-index: 1;
-    width: 652px;
-    padding-top: 92px;
+    /*width: 700px;*/
+    padding-top: 90px;
     padding-bottom: 37px;
-    /*padding-left: 30px;*/
+    padding-left: 45px;
     flex-direction: row-reverse;
   }
 
+  .product-best__product-week {
+    padding-right: 0;
+    padding-top: 12px;
+  }
+
   .product-best__title {
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 53px;
-    font-weight: 700;
     line-height: 57px;
   }
 
   .product-best__description {
-    padding-top: 200px;
+    padding-top: 197px;
     padding-left: 175px;
-    padding-bottom: 45px;
-    /*font-size: 17px;
-    font-weight: 400;
-    line-height: 30px;*/
+    padding-bottom: 48px;
   }
 
   .product-best__specifications {
     margin-left: 173px;
-    margin-bottom: 103px;
+    margin-bottom: 108px;
   }
 
   .product-best__price {
-    width: 144px;
+    width: 150px;
     padding-bottom: 33px;
-    padding-left: 250px;
+    padding-left: 245px;
   }
 
   .product-best__order-button {
-    margin-left: 174px;
+    margin-left: 176px;
   }
 
   .product-best__options {

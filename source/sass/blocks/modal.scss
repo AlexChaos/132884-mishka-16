@@ -1,6 +1,5 @@
 /*coment*/
 .modal__wrapper {
-  @include outline-block;
   width: 260px;
   margin: 0 auto;
   display: flex;
@@ -15,12 +14,12 @@
 
 .modal__title {
   @include margin-padding-reset;
-  width: 146px;
+  width: 150px;
   padding-top: 36px;
   padding-bottom: 25px;
   color: $color-modal-title;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 25px;
-  font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
 }
@@ -47,8 +46,8 @@
   height: 52px;
   border: 2px solid $color-modal-size-border;
   background-color: $color-modal-size-background;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
-  font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   cursor: pointer;
@@ -70,7 +69,6 @@
 
 @media (min-width: $tablet-width) {
   .modal {
-    @include outline-block;
     width: 566px;
     margin: 0 auto;
   }

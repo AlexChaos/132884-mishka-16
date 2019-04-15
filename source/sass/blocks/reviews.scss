@@ -1,6 +1,9 @@
 /*coment*/
+.reviews {
+  padding-bottom: 51px;
+}
+
 .reviews__wrapper {
-  @include outline-block;
   width: 260px;
   margin: 0 auto;
   display: flex;
@@ -8,24 +11,36 @@
 }
 
 .reviews__title {
+  @include margin-padding-reset;
   color: $color-reviews-title;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 25px;
-  font-weight: 700;
   line-height: 30px;
+  padding-bottom: 25px;
+}
+
+.reviews__item {
+  @include margin-padding-reset;
 }
 
 .reviews__text {
+  @include margin-padding-reset;
   color: $color-reviews-text;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
+  padding-bottom: 27px;
+}
+
+.reviews__author-name-wrapper {
+  padding-bottom: 32px;
 }
 
 .reviews__author-name {
   color: $color-reviews-author-name;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
   font-style: normal;
-  font-weight: 700;
   line-height: 24px;
 }
 
@@ -39,11 +54,12 @@
 .reviews__toggles {
   display: flex;
   border: none;
+  padding-bottom: 38px;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
-    margin-bottom: 65px;
+    margin-bottom: 28px;
     padding-bottom: 51px;
   }
 
@@ -54,7 +70,9 @@
     justify-content: space-between;
     width: 668px;
     margin: 0 auto;
-    padding-top: 95px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
     padding-bottom: 80px;
     background-image: url("../img/review@1x.jpg");
     background-size: auto 457px;
@@ -64,15 +82,18 @@
   .reviews__title {
     @include margin-padding-reset;
     order: 0;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 43px;
-    font-weight: 700;
     line-height: 50px;
     padding-bottom: 48px;
   }
 
   .reviews__text {
     @include margin-padding-reset;
+    width: 650px;
     padding-bottom: 57px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .reviews__item {
@@ -85,8 +106,8 @@
   }
 
   .reviews__author-name {
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 18px;
-    font-weight: 700;
   }
 
   .reviews__author-name-wrapper {
@@ -110,17 +131,17 @@
   }
 
   .reviews__wrapper {
-    @include outline-block;
     width: 1050px;
     margin: 0 auto;
-    padding-top: 75px;
+    padding-top: 80px;
     padding-bottom: 100px;
+    background-position: 50px 10px;
   }
 
   .reviews__title {
     width: 218px;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 53px;
-    font-weight: 700;
     line-height: 57px;
     padding-left: 170px;
     padding-bottom: 48px;
@@ -131,11 +152,19 @@
     padding-left: 175px;
   }
 
+  .reviews__author-name {
+    font-size: 17px;
+  }
+
   .reviews__text {
     width: 770px;
-    padding-bottom: 38px;
+    padding-bottom: 41px;
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;
+  }
+
+  .reviews__write-btn {
+    margin-top: 9px;
   }
 }
