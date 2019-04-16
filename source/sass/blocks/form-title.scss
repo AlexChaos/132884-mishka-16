@@ -2,7 +2,7 @@
 .form-title__main-title {
   @include margin-padding-reset;
   color: $color-form-title;
-  padding-top: 70px;
+  padding-top: 68px;
   padding-bottom: 75px;
   font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 27px;
@@ -18,19 +18,32 @@
 
 @media (min-width: $tablet-width) {
   .form-title {
-    margin-bottom: 80px;
+    margin-top: -66px;
+    margin-bottom: 75px;
+    padding-bottom: 12px;
   }
 
   .form-title__main-title {
     font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 43px;
     line-height: 50px;
-    padding-top: 25px;
+    padding-top: 92px;
+    padding-bottom: 68px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+  .form-title__main-title {
+    width: 485px;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 57px;
+  }
+
   .form-title {
-    margin-bottom: 155px;
+    margin-top: -70px;
+    padding-bottom: 20px;
+    margin-bottom: 138px;
   }
 }

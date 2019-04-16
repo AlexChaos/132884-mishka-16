@@ -69,28 +69,29 @@
         </section>
       </div>
 
-      <section class="order-form__options order-form__options--color">
-        <div class="order-form__item-wrapper">
-          <h2 class="visually-hidden">Цвет заказа</h2>
-          <div class="order-form__item-name order-form__item-name--color">
-            <span class="order-form__item-decorate">Цвет</span>
+      <div class="order-form__options-color">
+        <section class="order-form__options order-form__options--color">
+          <div class="order-form__item-wrapper">
+            <h2 class="visually-hidden">Цвет заказа</h2>
+            <div class="order-form__item-name order-form__item-name--color">
+              <span class="order-form__item-decorate">Цвет</span>
+            </div>
+            <div class="order-form__item-color-wraper">
+              <input class="visually-hidden" type="checkbox" name="white" id="white" checked="">
+              <label for="white">Белый</label>
+              <input class="visually-hidden" type="checkbox" name="grey" id="grey" checked="">
+              <label for="grey">Серый</label>
+              <input class="visually-hidden" type="checkbox" name="tiffany" id="tiffany">
+              <label for="tiffany">«Тиффани»</label>
+              <input class="visually-hidden" type="checkbox" name="black" id="black">
+              <label for="black">Черный</label>
+              <input class="visually-hidden" type="checkbox" name="pink" id="pink">
+              <label for="pink">Розовый</label>
+              <label for="orange">Оранжевый</label>
+            </div>
           </div>
-          <div class="order-form__item-color-wraper">
-            <input class="visually-hidden" type="checkbox" name="white" id="white" checked="">
-            <label for="white">Белый</label>
-            <input class="visually-hidden" type="checkbox" name="grey" id="grey" checked="">
-            <label for="grey">Серый</label>
-            <input class="visually-hidden" type="checkbox" name="tiffany" id="tiffany">
-            <label for="tiffany">«Тиффани»</label>
-            <input class="visually-hidden" type="checkbox" name="black" id="black">
-            <label for="black">Черный</label>
-            <input class="visually-hidden" type="checkbox" name="pink" id="pink">
-            <label for="pink">Розовый</label>
-            <input class="visually-hidden" type="checkbox" name="orange" id="orange">
-            <label for="orange">Оранжевый</label>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section class="order-form__options order-form__options--full-name">
         <div class="order-form__options-wrapper">
@@ -126,7 +127,7 @@
             <div class="order-form__options order-form__options--phone-num">
               <div class="order-form__option-wrapper">
                 <label class="order-form__phone" for="phone-number"></label>
-                <input type="tel" id="phone-number" name="phone-number" placeholder="+7 XXX XX XX*" required="">
+                <input type="tel" id="phone-number" name="phone-number" placeholder="+7 XXX XXX XX XX*" required="">
               </div>
             </div>
           </div>
