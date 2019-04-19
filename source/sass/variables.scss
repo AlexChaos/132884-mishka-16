@@ -36,6 +36,7 @@ $color-contacts-mail: #444444;
 $color-copyright-text: #000000;
 $color-main-nav-background: #ffffff;
 $color-footer-social-border: #e5e5e5;
+$color-page-header-border: #ececec;
 
 /*modal-color*/
 $color-modal-title: #000000;
@@ -46,6 +47,9 @@ $color-modal-size-background: #ffffff;
 $color-basket-button-background: #63d1bb;
 $color-basket-button-text: #ffffff;
 $color-background-modal: #ffffff;
+$color-text-modal-active: #ffffff;
+$color-background-modal-hover: #59d5bc;
+$color-border-modal-hover: #c7c7c7;
 /*catalog-color*/
 $color-catalog-title: #000000;
 $color-catalog-items-title: #000000;
@@ -80,3 +84,14 @@ $color-footer-background: #f1f1f1;
 /*variable-tablet-desktop-width*/
 $tablet-width: 768px;
 $desktop-width: 1150px;
+/*mobile-menu*/
+$mobile-width-only: 767px;
+/*active*/
+$color-description-interior-hover: #59d5bc;
+$color-description-toys-hover: #46c1ae;
+$color-background-button-hover: #444444;
+$color-text-button-hover: #ffffff;
+$color-text-button-active: #7c7c7c;
+$color-e-mail-link-hover: #46c1ae;
+$color-form-border-label-hover: #62d1ba;
+$color-form-border-label-active: #444444;

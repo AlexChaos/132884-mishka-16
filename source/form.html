@@ -10,7 +10,7 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav main-nav__wrapper">
+        <nav class="main-nav main-nav__wrapper main-nav--closed main-nav--nojs">
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo" href="index.html">
               <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
@@ -87,6 +87,7 @@
               <label for="black">Черный</label>
               <input class="visually-hidden" type="checkbox" name="pink" id="pink">
               <label for="pink">Розовый</label>
+              <input class="visually-hidden" type="checkbox" name="orange" id="orange">
               <label for="orange">Оранжевый</label>
             </div>
           </div>
@@ -139,7 +140,7 @@
             <div class="order-form__options order-form__options--mail">
               <div class="order-form__option-wrapper">
                 <label class="order-form__mail" for="mail"></label>
-                <input type="email" id="mail" name="mail" placeholder="Ваш e-mail*" required="">
+                <input type="email" id="mail" name="mail" placeholder="Ваш Email*" required="">
               </div>
             </div>
           </div>
@@ -197,5 +198,6 @@
       </div>
     </footer>
 
+    <script src="js/script.js"></script>
   </body>
 </html>

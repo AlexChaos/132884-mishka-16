@@ -49,6 +49,17 @@
   cursor: pointer;
 }
 
+.order-form__element-type label:hover::before {
+  border-color: $color-form-border-label-hover;
+  transition: border-color 0.5s ease;
+}
+
+.order-form__element-type label:active::before {
+  border-color: $color-form-border-label-active;
+  transition: border-color 0.5s ease, opacity 0.5s;
+  opacity: 0.3;
+}
+
 .order-form__full-name-wrapper {
   padding-bottom: 10px;
 }
@@ -56,12 +67,12 @@
 .order-form__full-name-option-wrapper {
   display: flex;
   flex-direction: column;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 }
 
 .order-form__item-name--phone-num {
   position: relative;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 }
 
 .order-form__options input {
@@ -77,19 +88,19 @@
 .order-form__options--phone-num input {
   font-size: 19px;
   line-height: 18px;
-  padding-bottom: 12px;
+  padding-bottom: 13px;
 }
 
 .order-form__item-name--full-name {
   position: relative;
-  padding-bottom: 27px;
+  padding-bottom: 28px;
 }
 
 .order-form__item-name--phone-num::after,
 .order-form__item-name--full-name::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: 62px;
   width: calc(100% - 60px);
   height: 1px;
@@ -113,7 +124,7 @@
 
 .order-form__item-name--more-info {
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 .order-form__item-name--more-info::after {
@@ -246,6 +257,17 @@
   cursor: pointer;
 }
 
+.order-form__item-color-wraper label:hover::before {
+  border-color: $color-form-border-label-hover;
+  transition: border-color 0.5s ease;
+}
+
+.order-form__item-color-wraper label:active::before {
+  border-color: $color-form-border-label-active;
+  opacity: 0.3;
+  transition: border-color 0.5s ease, opacity 0.5s;
+}
+
 .order-form__item-name {
   position: relative;
 }
@@ -271,6 +293,45 @@
 
 .order-form__options--more-info input::placeholder {
   opacity: 0.3;
+}
+
+.order-form__options--more-info textarea::placeholder {
+  opacity: 0.3;
+}
+
+.order-form__full-name-option-wrapper input:hover,
+.order-form__full-name-option-wrapper input:active {
+  border-color: $color-form-border-label-hover;
+  transition: opacity 0.5s, border-color 0.5s;
+}
+
+.order-form__full-name-option-wrapper input:active::placeholder {
+  border-color: $color-form-border-label-hover;
+  transition: opacity 0.5s, border-color 0.5s;
+  opacity: 1;
+}
+
+.order-form__option-wrapper input:hover,
+.order-form__option-wrapper input:active {
+  border-color: $color-form-border-label-hover;
+  transition: opacity 0.5s, border-color 0.5s;
+}
+
+.order-form__option-wrapper input:active::placeholder {
+  border-color: $color-form-border-label-hover;
+  transition: opacity 0.5s, border-color 0.5s;
+  opacity: 1;
+}
+
+.order-form__options--more-info:hover textarea {
+  border-color: $color-form-border-label-hover;
+  transition: opacity 0.5s, border-color 0.5s;
+}
+
+.order-form__options--more-info:active textarea::placeholder {
+  border-color: $color-form-border-label-hover;
+  transition: opacity 0.5s, border-color 0.5s;
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {
@@ -307,7 +368,6 @@
   .order-form__options-color {
     display: flex;
     background-color: $color-options-background;
-    /*margin-bottom: 60px;*/
   }
 
   .order-form__item-wrapper {
@@ -334,18 +394,18 @@
   }
 
   .order-form__element-type {
-    padding-top: 46px;
+    padding-top: 48px;
     padding-bottom: 15px;
   }
 
   .order-form__element-type label::before {
-    top: -12px;
+    top: -13px;
     width: 52px;
     height: 52px;
   }
 
   .order-form__element-type input:checked + label::after {
-    top: 3px;
+    top: 2px;
     left: 15px;
     width: 22px;
     height: 22px;
@@ -355,7 +415,7 @@
     width: 160px;
     padding-top: 3px;
     padding-bottom: 55px;
-    padding-left: 102px;
+    padding-left: 100px;
   }
 
   .order-form__element-type label {
@@ -381,15 +441,15 @@
   }
 
   .order-form__item-color-wraper label::before {
-    top: -11px;
-    left: 22px;
-    width: 52px;
+    top: -12px;
+    left: 20px;
+    width: 50px;
     height: 48px;
   }
 
   .order-form__item-color-wraper input:checked + label::after {
-    top: 6px;
-    left: 35px;
+    top: 4px;
+    left: 31px;
     width: 33px;
     height: 22px;
     background-size: 33px 22px;
@@ -404,14 +464,14 @@
     width: 400px;
     flex-grow: 1;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 59px;
     padding-left: 125px;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
   }
 
   .order-form__full-name-option-wrapper {
     flex-direction: row;
-    padding-bottom: 32px;
+    padding-bottom: 33px;
   }
 
   .order-form__full-name-option-wrapper label {
@@ -423,7 +483,7 @@
 
   .order-form__options input {
     padding-bottom: 14px;
-    padding-left: 18px;
+    padding-left: 15px;
     padding-right: 82px;
     font-size: 19px;
     line-height: 18px;
@@ -442,7 +502,7 @@
     flex-direction: column;
     width: 668px;
     margin: 0 auto;
-    padding-left: 50px;
+    padding-left: 52px;
     padding-right: 50px;
     padding-bottom: 50px;
   }
@@ -471,6 +531,12 @@
     padding-right: 0;
   }
 
+  .order-form__options textarea {
+    font-size: 19px;
+    line-height: 18px;
+    padding-bottom: 16px;
+  }
+
   .order-form__option-wrapper {
     display: flex;
     padding-bottom: 0;
@@ -478,7 +544,7 @@
 
   .order-form__item-name--phone-num {
     width: 60px;
-    padding-top: 70px;
+    padding-top: 68px;
   }
 
   .order-form__item-name--mail {
@@ -504,7 +570,7 @@
   .order-form__options--more-info {
     display: flex;
     flex-direction: column;
-    padding-bottom: 38px;
+    padding-bottom: 35px;
     padding-left: 122px;
     padding-right: 0;
     flex-grow: 1;
@@ -521,7 +587,7 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;
-    padding-top: 25px;
+    padding-top: 26px;
   }
 
   .order-form__send-btn {
@@ -624,7 +690,7 @@
   }
 
   .order-form__item-name--mail {
-    padding-left: 62px;
+    padding-left: 58px;
   }
 
   .order-form__options--mail {
@@ -652,7 +718,7 @@
   .order-form__options--more-info {
     padding-left: 72px;
     padding-right: 175px;
-    padding-bottom: 33px;
+    padding-bottom: 30px;
   }
 
   .order-form__send-wrapper {
@@ -666,6 +732,6 @@
   }
 
   .order-form__required-text {
-    padding-top: 27px;
+    padding-top: 29px;
   }
 }

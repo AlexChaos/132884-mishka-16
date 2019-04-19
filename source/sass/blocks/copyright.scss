@@ -13,12 +13,12 @@
   .copyright__text {
     padding-right: 56px;
     padding-top: 2px;
-    padding-bottom: 15px;
+    padding-bottom: 17px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .copyright__text {
-    padding-bottom: 25px;
+    /*padding-bottom: 25px;*/
   }
 }
