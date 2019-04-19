@@ -1,11 +1,44 @@
 /*coment*/
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal {
+  position: fixed;
   display: none;
+  z-index: 10;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-basket {
+  left: 0;
+  right: 0;
+  top: 25%;
 }
 
 .modal__wrapper {
   width: 260px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   flex-direction: column;
   background-color: $color-background-modal;
@@ -67,37 +100,47 @@
 
 .modal__basket-btn {
   border: none;
-  color: $color-basket-button-text;
+  color: $color-text-modal-active;
   background-color: $color-basket-button-background;
 }
 
+.modal__basket-btn:hover {
+  color: $color-text-modal-active;
+  background-color: $color-basket-button-background;
+}
+
+.modal__size-element:hover {
+  border-color: $color-border-modal-hover;
+}
+
+.modal__size-element:active {
+  border-color: $color-modal-size-border-active;
+}
+
 @media (min-width: $tablet-width) {
-  .modal {
-    width: 566px;
-    margin: 0 auto;
-  }
-
   .modal__wrapper {
+    width: 350px;
+    padding: 0 108px;
+  }
+
+  .modal__title {
+    display: flex;
+    justify-content: center;
     width: 351px;
-  }
-
-  .modal__header {
-    display: flex;
-    justify-content: center;
-  }
-
-  .modal__text {
-    display: flex;
-    justify-content: center;
-  }
-
-  .modal__size {
-    display: flex;
-    justify-content: center;
+    padding-top: 51px;
+    padding-bottom: 20px;
   }
 
   .modal__basket-btn-wrapper {
     display: flex;
     justify-content: center;
+  }
+
+  .modal__size-element {
+    width: 112px;
+  }
+
+  .modal__basket-btn {
+    width: 350px;
   }
 }

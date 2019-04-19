@@ -2,7 +2,7 @@
 .form-title__main-title {
   @include margin-padding-reset;
   color: $color-form-title;
-  padding-top: 70px;
+  padding-top: 68px;
   padding-bottom: 75px;
   font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 27px;
@@ -18,19 +18,62 @@
 
 @media (min-width: $tablet-width) {
   .form-title {
-    margin-bottom: 80px;
+    position: relative;
+    margin-top: -68px;
+    margin-bottom: 61px;
+    padding-bottom: 26px;
+    background-position: 0 bottom;
+    background-size: auto 23px;
+  }
+
+  .form-title::after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 24px;
+    max-height: 34px;
+    padding-top: 2.95652%;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 768px 100%;
+    background-position: 50% 100%;
   }
 
   .form-title__main-title {
     font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 43px;
     line-height: 50px;
-    padding-top: 25px;
+    padding-top: 92px;
+    padding-bottom: 67px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+  .form-title__main-title {
+    width: 485px;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 57px;
+  }
+
   .form-title {
-    margin-bottom: 155px;
+    margin-top: -71px;
+    padding-bottom: 56px;
+    margin-bottom: 102px;
+    background-size: auto 34px;
+  }
+
+  .form-title::after {
+    bottom: -2px;
+    height: 37px;
+    max-height: 37px;
+    padding-top: 0;
+    background-repeat: repeat-x;
+    background-position: 50% 50%;
+    background-size: 1150px 100%;
   }
 }

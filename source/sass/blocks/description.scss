@@ -18,7 +18,7 @@
 .description__title-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 90px;
+  padding-top: 89px;
   padding-bottom: 122px;
 }
 
@@ -67,18 +67,57 @@
   cursor: pointer;
 }
 
+.description__type--interior:hover,
+.description__type--toys:hover {
+  background-color: $color-description-interior-hover;
+  min-height: 108px;
+  margin-top: -5px;
+  transition: 0.5s, background 0.5s ease, color 0.2s ease, margin-top 0.5s ease;
+}
+
+.description__type--toys:hover {
+  background-color: $color-description-toys-hover;
+}
+
+.description__type--interior:active a {
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+
+.description__type--toys:active a {
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+
 @media (min-width: $tablet-width) {
   .description {
+    position: relative;
     width: auto;
     min-height: 660px;
     padding-left: 50px;
     padding-right: 50px;
     margin: 0 auto;
-    margin-top: -70px;
+    margin-top: -68px;
     margin-bottom: 45px;
     background-image: url("/img/hero-tablet@1x.jpg");
     background-size: auto 744px;
     background-position: center;
+  }
+
+  .description::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 23px;
+    max-height: 23px;
+    padding-top: 0;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 768px 100%;
+    background-position: 50% 100%;
   }
 
   .description__title {
@@ -90,18 +129,18 @@
 
   .description__title-wrapper {
     padding-top: 153px;
-    padding-bottom: 375px;
+    padding-bottom: 373px;
   }
 
   .description__type a {
-    padding-left: 35px;
+    padding-left: 36px;
     padding-right: 20px;
   }
 
   .description__type span {
     font-size: 20px;
     line-height: 30px;
-    padding-top: 27px;
+    padding-top: 28px;
   }
 
   .description__type-list {
@@ -121,7 +160,17 @@
     width: auto;
     margin: 0 auto;
     margin-bottom: 35px;
-    margin-top: -75px;
+    margin-top: -72px;
+  }
+
+  .description::after {
+    bottom: -20px;
+    height: 37px;
+    max-height: 37px;
+    padding-top: 0;
+    background-repeat: repeat-x;
+    background-position: 50% 50%;
+    background-size: 1250px 100%;
   }
 
   .description__type {
@@ -135,7 +184,7 @@
 
   .description__title-wrapper {
     padding-top: 155px;
-    padding-bottom: 360px;
+    padding-bottom: 358px;
   }
 
   .description__title {
