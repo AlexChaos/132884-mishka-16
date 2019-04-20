@@ -61,6 +61,9 @@
 
 .production__image {
   @include margin-padding-reset;
+  width: 260px;
+  height: 150px;
+  background-color: $color-body-background-description;
 }
 
 .production__play-btn {
@@ -120,6 +123,11 @@
 
   .production__video {
     order: -1;
+  }
+
+  .production__image {
+    width: 668px;
+    height: 455px;
   }
 
   .production__video img {
@@ -196,6 +204,11 @@
     padding-bottom: 46px;
     font-weight: 400;
     line-height: 30px;
+  }
+
+  .production__image {
+    width: 682px;
+    height: 455px;
   }
 
   .production__image img {
