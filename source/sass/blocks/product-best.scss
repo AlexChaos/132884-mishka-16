@@ -75,6 +75,9 @@
 }
 
 .product-best__photo {
+  width: 260px;
+  height: 315px;
+  background-color: $color-body-background-description;
   margin-bottom: 23px;
 }
 
@@ -193,9 +196,11 @@
   }
 
   .product-best__photo {
+    width: 333px;
+    height: 404px;
     order: 6;
     align-self: flex-end;
-    padding-top: 8px;
+    margin-top: 8px;
     margin-bottom: 0;
   }
 
@@ -294,9 +299,13 @@
     padding-bottom: 12px;
   }
 
-  .product-best__photo,
+  .product-best__photo {
+    width: 525px;
+    height: 636px;
+    margin-top: 38px;
+  }
+
   .product-best__photo img {
-    padding-top: 18px;
     width: 525px;
     height: 636px;
   }

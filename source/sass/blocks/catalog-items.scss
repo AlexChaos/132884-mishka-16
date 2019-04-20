@@ -9,8 +9,11 @@
 }
 
 .catalog-items__link {
+  width: 260px;
+  height: 195px;
   display: flex;
-  height: auto;
+  /*height: auto;*/
+  background-color: $color-body-background-description;
 }
 
 .catalog-items__basket {
@@ -135,6 +138,11 @@
     border-top: 1px solid $color-catalog-items-buy;
   }
 
+  .catalog-items__link {
+    width: 334px;
+    height: 334px;
+  }
+
   .catalog-items__link img {
     width: 334px;
     height: 334px;
@@ -171,6 +179,11 @@
     width: 315px;
     flex-direction: column;
     padding-bottom: 57px;
+  }
+
+  .catalog-items__link {
+    width: 316px;
+    height: 462px;
   }
 
   .catalog-items__link img {
