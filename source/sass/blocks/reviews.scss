@@ -73,6 +73,18 @@
   padding-bottom: 38px;
 }
 
+.navigation-toggles--next:hover,
+.navigation-toggles--prew:hover {
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
+}
+
+.navigation-toggles--next:active,
+.navigation-toggles--prew:active {
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
     margin-bottom: 35px;

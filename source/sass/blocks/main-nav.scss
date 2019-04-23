@@ -35,7 +35,7 @@
   justify-content: center;
   background-color: $color-main-nav-background;
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
 }
 
 .main-nav__list-link {
@@ -43,9 +43,9 @@
   color: $color-main-menu-link;
   font-size: 17px;
   line-height: 24px;
+  padding-top: 27px;
+  padding-bottom: 28px;
   padding-left: 76px;
-  padding-top: 28px;
-  padding-bottom: 27px;
 }
 
 .main-nav__list-link:hover {
@@ -83,6 +83,40 @@
   height: 20px;
   border: 0;
   background: inherit;
+}
+
+.main-nav__search-icon {
+  position: absolute;
+  top: 31px;
+  left: 32px;
+  opacity: 0.2;
+}
+
+.main-nav__cart-icon {
+  position: absolute;
+  top: 109px;
+  left: 30px;
+  opacity: 0.2;
+}
+
+.main-nav__list-item-search a:hover .main-nav__search-icon {
+  opacity: 1;
+  fill: $color-icon-search-hover;
+}
+
+.main-nav__list-item-search a:active .main-nav__search-icon {
+  fill: $color-icon-search-hover;
+  opacity: 0.3;
+}
+
+.main-nav__list-item--cart a:hover .main-nav__cart-icon {
+  opacity: 1;
+  fill: $color-icon-search-hover;
+}
+
+.main-nav__list-item--cart a:active .main-nav__cart-icon {
+  fill: $color-icon-search-hover;
+  opacity: 0.3;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -214,6 +248,16 @@
 
   .main-nav__list--sub {
     display: none;
+  }
+
+  .main-nav__search-icon {
+    top: 37px;
+    left: 34px;
+  }
+
+  .main-nav__cart-icon {
+    top: 35px;
+    left: 115px;
   }
 }
 

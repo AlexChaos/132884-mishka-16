@@ -321,6 +321,13 @@
   transition: opacity 0.5s, border-color 0.5s;
 }
 
+.order-form__option-wrapper:active svg,
+.order-form__option-wrapper:hover svg {
+  fill: $color-form-option-wrapper-hover-svg;
+  opacity: 1;
+  transition: opacity 0.5s, fill 0.5s;
+}
+
 .order-form__option-wrapper input:active::placeholder {
   border-color: $color-form-border-label-hover;
   transition: opacity 0.5s, border-color 0.5s;
@@ -336,6 +343,20 @@
   border-color: $color-form-border-label-hover;
   transition: opacity 0.5s, border-color 0.5s;
   opacity: 1;
+}
+
+.order-form__phone-icon {
+  position: absolute;
+  top: 2px;
+  right: 9px;
+  opacity: 0.2;
+}
+
+.order-form__mail-icon {
+  position: absolute;
+  top: -3px;
+  right: 4px;
+  opacity: 0.2;
 }
 
 @media (min-width: $tablet-width) {
@@ -612,6 +633,15 @@
   .order-form__item-name--more-info::after {
     display: none;
   }
+
+  .order-form__phone-icon {
+    right: 28px;
+  }
+
+  .order-form__mail-icon {
+    top: 2px;
+    right: 24px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -737,5 +767,13 @@
 
   .order-form__required-text {
     padding-top: 29px;
+  }
+
+  .order-form__phone-icon {
+    right: 11px;
+  }
+
+  .order-form__mail-icon {
+    right: 6px;
   }
 }

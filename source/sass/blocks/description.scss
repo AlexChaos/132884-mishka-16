@@ -2,7 +2,7 @@
 .description {
   width: 320px;
   margin: 0 auto;
-  margin-top: -21px;
+  margin-top: -19px;
   margin-bottom: 27px;
   background-color: $color-description-background;
   background-image: url("/img/hero-mobile@1x.jpg");
@@ -24,7 +24,7 @@
 .description__title-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 89px;
+  padding-top: 90px;
   padding-bottom: 122px;
 }
 
@@ -95,6 +95,26 @@
   transition: opacity 0.5s;
 }
 
+.description__type-interior-icon {
+  padding-top: 2px;
+  padding-right: 9px;
+  opacity: 0.5;
+  fill: $color-interior-icon-hover;
+}
+
+.description__type-toy-icon {
+  opacity: 0.5;
+  fill: $color-interior-icon-hover;
+}
+
+.description__type--interior:hover .description__type-interior-icon {
+  opacity: 0.7;
+}
+
+.description__type--toys:hover .description__type-toy-icon {
+  opacity: 0.7;
+}
+
 @media (min-width: $tablet-width) {
   .description {
     position: relative;
@@ -103,7 +123,7 @@
     padding-left: 50px;
     padding-right: 50px;
     margin: 0 auto;
-    margin-top: -68px;
+    margin-top: -69px;
     margin-bottom: 45px;
     background-image: url("/img/hero-tablet@1x.jpg");
     background-size: auto 744px;
@@ -146,7 +166,7 @@
 
   .description__type a {
     padding-left: 36px;
-    padding-right: 20px;
+    padding-right: 28px;
   }
 
   .description__type span {
@@ -164,6 +184,11 @@
 
   .description__type {
     width: 668px;
+  }
+
+  .description__type-toy-icon {
+    padding-top: 3px;
+    padding-right: 5px;
   }
 }
 
