@@ -51,7 +51,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
 }
 
 .product-best__specifications {
@@ -61,7 +61,7 @@
   font-weight: 400;
   line-height: 20px;
   border-collapse: collapse;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .product-best__feature {
@@ -71,14 +71,14 @@
 .product-best__options {
   padding-right: 13px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .product-best__photo {
   width: 260px;
   height: 315px;
   background-color: $color-body-background-description;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .product-best__price {
@@ -100,15 +100,15 @@
   .product-best::after {
     content: "";
     position: absolute;
-    bottom: -14px;
+    bottom: 0;
     left: 0;
-    display: block;
+    //display: block;
     width: 100%;
     min-width: 768px;
     height: 17px;
     max-height: 23px;
     margin: 0;
-    padding-top: 26px;
+    margin-top: 26px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
