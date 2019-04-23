@@ -1,5 +1,6 @@
 /*coment*/
 .button {
+  @include margin-padding-reset;
   width: 259px;
   height: 52px;
   border: 2px solid $color-button-border;

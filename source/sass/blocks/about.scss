@@ -67,8 +67,8 @@
 .about__item--ecology::before {
   content: "";
   position: absolute;
-  top: -1px;
-  left: 9px;
+  top: 0;
+  left: 8px;
   width: 31px;
   height: 37px;
   background-image: url("../img/icon-feature-flower.svg");
@@ -80,7 +80,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 2px;
+  left: 1px;
   width: 46px;
   height: 27px;
   background-image: url("../img/icon-feature-money.svg");
@@ -91,8 +91,8 @@
 .about__item--likes::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 8px;
+  top: 6px;
+  left: 7px;
   width: 33px;
   height: 27px;
   background-image: url("../img/icon-feature-heart.svg");
@@ -103,7 +103,7 @@
   content: "";
   position: absolute;
   top: 3px;
-  left: 5px;
+  left: 4px;
   width: 34px;
   height: 34px;
   background-image: url("../img/icon-feature-ball.svg");

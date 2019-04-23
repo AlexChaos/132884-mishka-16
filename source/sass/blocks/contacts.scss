@@ -12,10 +12,10 @@
 
 .contacts__map {
   position: relative;
-  width: 322px;
+  width: 320px;
   height: 457px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   display: flex;
   flex-direction: column;
   background-color: $color-body-background-description;
@@ -40,7 +40,7 @@
   font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  padding-top: 36px;
+  padding-top: 35px;
   padding-bottom: 26px;
 }
 
@@ -114,7 +114,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-bottom: 58px;
+    margin-bottom: 56px;
   }
 
   .contacts__address-container {
@@ -181,7 +181,7 @@
     width: 768px;
     height: 457px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
   }
 
   .contacts__map-image {

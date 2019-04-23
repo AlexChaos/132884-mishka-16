@@ -284,18 +284,22 @@
 }
 
 .order-form__full-name-wrapper input::placeholder {
+  color: $color-order-form-option-input;
   opacity: 0.3;
 }
 
 .order-form__phone-wrapper input::placeholder {
+  color: $color-order-form-option-input;
   opacity: 0.3;
 }
 
 .order-form__options--more-info input::placeholder {
+  color: $color-order-form-option-input;
   opacity: 0.3;
 }
 
 .order-form__options--more-info textarea::placeholder {
+  color: $color-order-form-option-input;
   opacity: 0.3;
 }
 

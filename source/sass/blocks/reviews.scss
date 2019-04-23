@@ -82,15 +82,15 @@
   .reviews::after {
     content: "";
     position: absolute;
-    bottom: -14px;
+    bottom: 0;
     left: 0;
-    display: block;
+    //display: block;
     width: 100%;
     min-width: 768px;
     height: 17px;
     max-height: 23px;
     margin: 0;
-    padding-top: 30px;
+    margin-top: 30px;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100% 100%;
@@ -157,7 +157,7 @@
 
   .reviews__insta-author {
     display: flex;
-    padding-top: 8px;
+    padding-top: 4px;
     line-height: 24px;
   }
 
