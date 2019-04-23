@@ -23,6 +23,22 @@
 
 @media (min-width: $tablet-width) {
   .navigation-toggles {
+    width: 200px;
     cursor: pointer;
+  }
+
+  .navigation-toggles--prew,
+  .navigation-toggles--next {
+    border: none;
+  }
+
+  .reviews__toggles-prev-icon {
+    padding-top: 9px;
+    padding-left: 37px;
+  }
+
+  .reviews__toggles-next-icon {
+    padding-top: 9px;
+    padding-left: 11px;
   }
 }

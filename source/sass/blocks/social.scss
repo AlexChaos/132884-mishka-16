@@ -1,4 +1,8 @@
 /*coment*/
 .social__list {
-  list-style: none;
+  @include list-reset;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
