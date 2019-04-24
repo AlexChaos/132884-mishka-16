@@ -3,13 +3,13 @@
   @include margin-padding-reset;
   width: 259px;
   height: 52px;
-  border: 2px solid $color-button-border;
-  background-color: $color-button-background;
-  color: $color-button-text;
-  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
+  color: $color-button-text;
   text-transform: uppercase;
+  background-color: $color-button-background;
+  border: 2px solid $color-button-border;
   cursor: pointer;
 }
 

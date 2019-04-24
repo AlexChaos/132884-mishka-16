@@ -4,13 +4,13 @@
 }
 
 .copyright__text {
-  color: $color-copyright-text;
-  font-family: "Open-Sans-Bold", "Arial", sans-serif;
-  font-size: 19px;
-  line-height: 18px;
   margin-left: -30px;
   padding-top: 27px;
   padding-right: 30px;
+  font-size: 19px;
+  line-height: 18px;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
+  color: $color-copyright-text;
 }
 
 .copyright__link-academy {
@@ -21,21 +21,21 @@
 
 .copyright__link-academy:hover,
 .social__list svg:hover {
-  fill: $color-copyright-link-academy-hover;
   transition: fill 0.3s ease;
+  fill: $color-copyright-link-academy-hover;
 }
 
 .copyright__link-academy:active,
 .social__list svg:active {
-  fill: $color-copyright-link-academy-hover;
   opacity: 0.3;
   transition: opacity 0.5s ease;
+  fill: $color-copyright-link-academy-hover;
 }
 
 @media (min-width: $tablet-width) {
   .copyright__text {
-    padding-right: 55px;
     padding-top: 2px;
+    padding-right: 55px;
     padding-bottom: 17px;
   }
 
@@ -47,6 +47,6 @@
 
 @media (min-width: $desktop-width) {
   .copyright__text {
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 }

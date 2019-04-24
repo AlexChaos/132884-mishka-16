@@ -4,20 +4,20 @@
 }
 
 .contacts__address-container {
-  width: 260px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .contacts__map {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 320px;
   height: 457px;
   margin: 0 auto;
   margin-bottom: 38px;
-  display: flex;
-  flex-direction: column;
   background-color: $color-body-background-description;
 }
 
@@ -28,20 +28,20 @@
 }
 
 .contacts__map-btn-wrapper {
-  width: 260px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .contacts__title {
   @include margin-padding-reset;
-  color: $color-contacts-title;
-  font-family: "Open-Sans-Bold", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
   padding-top: 35px;
   padding-bottom: 26px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
+  color: $color-contacts-title;
 }
 
 .contacts__main-info {
@@ -50,16 +50,16 @@
 
 .contacts__e-mail {
   display: flex;
-  color: $color-contacts-mail;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 30px;
   padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: $color-contacts-mail;
 }
 
 .contacts__e-mail-link {
   position: relative;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 }
 
 .contacts__item-underline::after {
@@ -78,10 +78,10 @@
 }
 
 .contacts__e-mail-link:active .contacts__item-underline {
+  width: 177px;
   color: $color-e-mail-link-hover;
   opacity: 0.3;
   transition: opacity 0.5s ease;
-  width: 177px;
 }
 
 .contacts__e-mail-link:active .contacts__item-underline::after {
@@ -90,10 +90,10 @@
 
 .contacts__address {
   display: flex;
-  color: $color-contacts-mail;
-  font-size: 15px;
   font-weight: 400;
+  font-size: 15px;
   line-height: 30px;
+  color: $color-contacts-mail;
 }
 
 .contacts__item {
@@ -137,11 +137,11 @@
 
   .contacts__title {
     @include margin-padding-reset;
-    font-family: "Open-Sans-Bold", "Arial", sans-serif;
+    padding-top: 25px;
+    padding-bottom: 49px;
     font-size: 43px;
     line-height: 50px;
-    padding-top: 25px;
-    padding-bottom: 48px;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
   }
 
   .contacts__main-info {
@@ -165,6 +165,10 @@
     line-height: 30px;
   }
 
+  .contacts__e-mail-link {
+    padding-bottom: 3px;
+  }
+
   .contacts__item {
     @include margin-padding-reset;
   }
@@ -181,7 +185,7 @@
     width: 768px;
     height: 457px;
     margin: 0 auto;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   .contacts__map-image {
@@ -204,24 +208,24 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin-bottom: 102px;
+    margin-bottom: 104px;
   }
 
   .contacts__wrapper {
-    width: 1050px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-start;
+    width: 1050px;
+    margin: 0 auto;
   }
 
   .contacts__address-container {
-    padding-left: 98px;
-    padding-right: 24px;
-    margin: 0;
     width: 350px;
+    margin: 0;
+    padding-right: 24px;
+    padding-left: 98px;
   }
 
   .contacts__address-container::before {
@@ -230,11 +234,11 @@
   }
 
   .contacts__title {
-    padding-left: 71px;
     padding-top: 75px;
     padding-bottom: 48px;
-    font-size: 53px;
+    padding-left: 71px;
     font-weight: 700;
+    font-size: 53px;
     line-height: 57px;
   }
 
@@ -244,7 +248,7 @@
 
   .contacts__e-mail {
     padding-right: 0;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
   }
 
   .contacts__map {
@@ -255,24 +259,24 @@
   }
 
   .contacts__main-info {
-    width: 320px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 75px;
-    padding-right: 0;
+    width: 320px;
     margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 75px;
   }
 
   .contacts__item--name {
-    padding-right: 25px;
+    padding-right: 26px;
   }
 
   .contacts__map-btn-wrapper {
-    width: 230px;
-    margin-left: 175px;
-    margin-top: -52px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 230px;
+    margin-top: -52px;
+    margin-left: 175px;
   }
 }
