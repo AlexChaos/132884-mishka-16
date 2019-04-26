@@ -4,10 +4,14 @@
   padding-bottom: 51px;
 }
 
+.reviews br {
+  display: none;
+}
+
 .reviews::after {
   content: "";
   position: absolute;
-  background-image: url("../img/bg-zigzag-line.svg");
+  background-image: url("/img/bg-zigzag-line.svg");
   width: 100%;
   height: 7px;
   bottom: 0;
@@ -30,7 +34,7 @@
   font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 25px;
   line-height: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 .reviews__item {
@@ -85,6 +89,15 @@
   transition: opacity 0.5s ease;
 }
 
+.reviews__toggles-prev-icon {
+  padding-right: 2px;
+}
+
+.reviews__toggles-next-icon {
+  padding-top: 2px;
+  padding-right: 2px;
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
     margin-bottom: 35px;
@@ -96,7 +109,6 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    //display: block;
     width: 100%;
     min-width: 768px;
     height: 17px;
@@ -118,9 +130,9 @@
     margin: 0 auto;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 80px;
+    padding-top: 78px;
     padding-bottom: 80px;
-    background-image: url("../img/review@1x.jpg");
+    background-image: url("/img/review@1x.jpg");
     background-size: auto 457px;
     background-repeat: no-repeat;
   }
@@ -137,7 +149,7 @@
     font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 43px;
     line-height: 50px;
-    padding-bottom: 48px;
+    padding-bottom: 49px;
   }
 
   .reviews__text {
@@ -173,12 +185,23 @@
     line-height: 24px;
   }
 
+  .reviews__toggles-prev-icon {
+    padding-top: 9px;
+    padding-left: 37px;
+  }
+
+  .reviews__toggles-next-icon {
+    padding-top: 8px;
+    padding-left: 11px;
+  }
+
   .reviews__toggles {
     order: 5;
   }
 
   .reviews__write-btn {
     order: 2;
+    margin-top: 2px;
     width: 175px;
   }
 }
@@ -187,6 +210,10 @@
   .reviews {
     margin-bottom: 48px;
     background-size: 0;
+  }
+
+  .reviews br {
+    display: flex;
   }
 
   .reviews::after {
@@ -218,7 +245,7 @@
     font-size: 53px;
     line-height: 57px;
     padding-left: 170px;
-    padding-bottom: 48px;
+    padding-bottom: 49px;
   }
 
   .reviews__author-name-wrapper,
@@ -231,12 +258,12 @@
   }
 
   .reviews__insta-author {
-    padding-top: 5px;
+    padding-top: 3px;
   }
 
   .reviews__text {
     width: 770px;
-    padding-bottom: 41px;
+    padding-bottom: 39px;
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;

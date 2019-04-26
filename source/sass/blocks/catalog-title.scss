@@ -13,7 +13,7 @@
   font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 27px;
   line-height: 30px;
-  padding-top: 68px;
+  padding-top: 70px;
   padding-bottom: 75px;
 }
 
@@ -41,12 +41,11 @@
     position: absolute;
     bottom: -2px;
     left: 0;
-    //display: block;
     width: 100%;
     height: 24px;
     max-height: 34px;
     margin-top: 2.95652%;
-    background-image: url("../img/bg-zigzag-fill.svg");
+    background-image: url("/img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: 768px 100%;
     background-position: 50% 100%;

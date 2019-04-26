@@ -7,7 +7,7 @@
 .product-best::after {
   content: "";
   position: absolute;
-  background-image: url("../img/bg-zigzag-line.svg");
+  background-image: url("/img/bg-zigzag-line.svg");
   width: 100%;
   height: 7px;
   bottom: 0;
@@ -25,7 +25,7 @@
 }
 
 .product-best__header {
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 }
 
 .product-best__title {
@@ -61,7 +61,7 @@
   font-weight: 400;
   line-height: 20px;
   border-collapse: collapse;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 
 .product-best__feature {
@@ -70,8 +70,8 @@
 
 .product-best__options {
   padding-right: 13px;
-  padding-top: 10px;
-  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-bottom: 11px;
 }
 
 .product-best__photo {
@@ -94,7 +94,7 @@
 @media (min-width: $tablet-width) {
   .product-best {
     padding-bottom: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
   }
 
   .product-best::after {
@@ -109,7 +109,7 @@
     max-height: 23px;
     margin: 0;
     margin-top: 26px;
-    background-image: url("../img/bg-zigzag-line.svg");
+    background-image: url("/img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100% 100%;
@@ -183,7 +183,7 @@
   .product-best__options {
     width: 67px;
     padding-right: 26px;
-    padding-bottom: 9px;
+    padding-bottom: 11px;
   }
 
   .product-best__product-week {
@@ -269,7 +269,7 @@
   .product-best__description {
     padding-top: 195px;
     padding-left: 175px;
-    padding-bottom: 48px;
+    padding-bottom: 49px;
   }
 
   .product-best__specifications {
@@ -280,7 +280,7 @@
 
   .product-best__price {
     width: 150px;
-    padding-bottom: 33px;
+    padding-bottom: 35px;
     padding-left: 245px;
   }
 
@@ -289,14 +289,14 @@
   }
 
   .product-best__options {
-    padding-top: 9px;
+    padding-top: 8px;
     padding-bottom: 11px;
     padding-right: 30px;
   }
 
   .product-best__value {
-    padding-top: 6px;
-    padding-bottom: 12px;
+    padding-top: 8px;
+    padding-bottom: 11px;
   }
 
   .product-best__photo {
