@@ -11,6 +11,7 @@ var include = require("posthtml-include");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-htmlmin");
 var csso = require("gulp-csso");
 var webp = require("gulp-webp");
 var imagemin = require("gulp-imagemin");
@@ -72,6 +73,13 @@ gulp.task("html", function () {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("min-html", function () {
+  return gulp.src("source/*.html")
+  .pipe(posthtml([include()]))
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest("build/"));
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
@@ -95,17 +103,23 @@ gulp.task("build", gulp.series(
   "min-js",
   "sprite",
   "html",
+  "min-html",
   "images",
   "webp"
 ));
 
 gulp.task("server", function () {
   server.init({
-    server: "build/"
+    server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/js/**/*.js", gulp.series("js", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
