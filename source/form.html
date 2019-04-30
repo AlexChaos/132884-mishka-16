@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Вязание на заказ</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
 
     <script>
@@ -146,7 +148,7 @@
             <div class="order-form__options order-form__options--phone-num">
               <div class="order-form__option-wrapper">
                 <label class="order-form__phone" for="phone-number"></label>
-                <input type="tel" id="phone-number" name="phone-number" placeholder="+7 XXX XXX XX XX*" required="">
+                <input type="tel" id="phone-number" name="phone-number" placeholder="+7 XXX XXX XX XX*" required="" aria-label="Ведите номер телефона">
                 <svg class="order-form__phone-icon" width="24" height="24">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
@@ -161,7 +163,7 @@
             <div class="order-form__options order-form__options--mail">
               <div class="order-form__option-wrapper">
                 <label class="order-form__mail" for="mail"></label>
-                <input type="email" id="mail" name="mail" placeholder="Ваш Email*" required="">
+                <input type="email" id="mail" name="mail" placeholder="Ваш Email*" required="" aria-label="Ведите ваш электронный адресс">
                 <svg class="order-form__mail-icon" width="32" height="32">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
@@ -181,7 +183,7 @@
             </div>
             <div class="order-form__options order-form__options--more-info">
               <label class="order-form__more-info" for="more-info"></label>
-              <textarea id="more-info" name="more-info" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea id="more-info" name="more-info" rows="6" placeholder="Опишите все ваши пожелания к заказу" aria-label="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
 
