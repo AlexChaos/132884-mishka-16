@@ -24,7 +24,7 @@
   left: 33px;
   width: 32px;
   height: 32px;
-  background-image: url("/img/icon-video.svg");
+  background-image: url("../img/icon-video.svg");
   background-repeat: no-repeat;
   background-size: 32px 32px;
 }
@@ -85,7 +85,7 @@
 
 .production__play-btn::before {
   content: "";
-  background-image: url("/img/icon-play.svg");
+  background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   background-size: 100px 76px;
   background-position: 50% 50%;
@@ -175,7 +175,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     width: 1050px;
-    height: 455px;
+    height: 454px;
     box-sizing: content-box;
     margin-bottom: 103px;
   }
@@ -194,7 +194,7 @@
     line-height: 24px;
     padding-left: 76px;
     padding-top: 95px;
-    padding-bottom: 34px;
+    padding-bottom: 33px;
   }
 
   .production__text {

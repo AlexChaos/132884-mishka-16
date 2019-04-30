@@ -121,13 +121,13 @@
 
 @media (max-width: $mobile-width-only) {
   .main-nav__toggle--closed {
-    background: url("/img/icon-menu-open.svg");
+    background: url("../img/icon-menu-open.svg");
     background-repeat: no-repeat;
     background-size: 19px 14px;
   }
 
   .main-nav__toggle--opened {
-    background: url("/img/icon-menu-close.svg");
+    background: url("../img/icon-menu-close.svg");
     background-repeat: no-repeat;
     background-size: 20px 20px;
   }
