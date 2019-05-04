@@ -137,6 +137,10 @@
   background: $color-order-form-item-after;
 }
 
+.order-form__options--more-info textarea {
+  background-color: $color-order-form-textarea-background;
+}
+
 .order-form__wrapper {
   width: 260px;
   margin: 0 auto;
@@ -514,7 +518,15 @@
     line-height: 18px;
     width: auto;
     flex-grow: 1;
-    background-color: inherit;
+    background-color: $color-body-background;
+  }
+
+  .order-form__options--mail input {
+    background-color: $color-form-title-backgroundl;
+  }
+
+  .order-form__options--phone-num input {
+    background-color: $color-form-title-backgroundl;
   }
 
   .order-form__bond {
