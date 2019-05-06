@@ -113,7 +113,6 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "minjs",
-  "webp",
   "sprite",
   "html"
 ));
