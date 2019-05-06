@@ -98,6 +98,14 @@
   padding-right: 2px;
 }
 
+.reviews__write-btn {
+  width: auto;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
     margin-bottom: 35px;
@@ -202,7 +210,7 @@
   .reviews__write-btn {
     order: 2;
     margin-top: 2px;
-    width: 175px;
+    width: 170px;
   }
 }
 
